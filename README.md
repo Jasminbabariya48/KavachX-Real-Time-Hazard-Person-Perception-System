@@ -272,3 +272,5 @@ Frame #05 | DSP Latency: 71.38 ms | Detections: SMOKE (39.1%) [543,412,616,454],
 
 ## 7. License
 Apache License 2.0. Copyright (c) 2026 KavachX Team.
+#   K a v a c h X - R e a l - T i m e - H a z a r d - P e r s o n - P e r c e p t i o n - S y s t e m  
+ 
