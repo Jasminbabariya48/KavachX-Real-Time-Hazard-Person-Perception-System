@@ -1,0 +1,35 @@
+{
+  "benchmark_100_runs": {
+    "mean_ms": 30.13723,
+    "median_ms": 30.131,
+    "min_ms": 29.978,
+    "max_ms": 30.383,
+    "p95_ms": 30.318350000000002,
+    "p99_ms": 30.383,
+    "throughput_fps": 33.18154986373997
+  },
+  "concurrency_stress": {
+    "2_clients": {
+      "errors": 0,
+      "fps": 14.36504608109087
+    },
+    "4_clients": {
+      "errors": 0,
+      "fps": 18.34226017860979
+    },
+    "8_clients": {
+      "errors": 0,
+      "fps": 28.392271316077455
+    }
+  },
+  "sustained_stability_500": {
+    "total_requests": 500,
+    "errors": 0,
+    "duration_sec": 19.866761922836304,
+    "throughput_fps": 25.167664561644724,
+    "mean_latency_ms": 34.31153,
+    "p95_latency_ms": 65.00305,
+    "memory_leak_detected": false,
+    "verdict": "PASS"
+  }
+}

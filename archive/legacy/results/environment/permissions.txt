@@ -1,0 +1,12 @@
+work_user2
+uid=1006(work_user2) gid=1006(work_user2) groups=1006(work_user2),100(users),1005(qairt-users)
+work_user2 users qairt-users
+total 0
+drwxr-xr-x   2 root root      100 Jan  1  1970 .
+drwxr-xr-x  19 root root     3720 Aug 26 07:19 ..
+crw-------   1 root root   249, 1 Nov 25  2025 default_cma_region
+crw-rw----+  1 root render 249, 2 Nov 25  2025 reserved
+crw-rw----+  1 root render 249, 0 Nov 25  2025 system
+crw-rw----+ 1 root render 10, 264 Nov 25  2025 /dev/fastrpc-adsp
+crw-rw----+ 1 root render 10, 263 Nov 25  2025 /dev/fastrpc-cdsp
+crw-rw----+ 1 root render 10, 262 Nov 25  2025 /dev/fastrpc-cdsp-secure

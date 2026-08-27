@@ -1,0 +1,11 @@
+{
+  "test_target": "Kavach-EdgeBox",
+  "backend": "/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnHtp.so",
+  "system_lib": "/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnSystem.so",
+  "execution_attempted": true,
+  "result": "BLOCKED_ON_PERMISSION",
+  "error_code": "ERROR_DEVICE_CREATE (14001)",
+  "dsp_transport_error": "0x00000072 (EACCES: Permission Denied)",
+  "root_cause": "User work_user2 does not belong to group render; cannot open /dev/fastrpc-cdsp",
+  "hardware_execution_verified": false
+}

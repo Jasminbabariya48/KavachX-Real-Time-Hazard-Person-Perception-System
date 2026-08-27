@@ -1,0 +1,114 @@
+[
+  {
+    "test_id": "FIT-01",
+    "name": "Missing Model Binary",
+    "action": "Attempt init with non-existent model path",
+    "expected": "Refuse startup, log error, return non-zero exit code",
+    "actual": "Pre-flight self-check caught missing file and blocked startup",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-02",
+    "name": "Model SHA256 Tampering",
+    "action": "Mismatch expected SHA256 in manifest",
+    "expected": "Refuse startup, state FAILED in health report",
+    "actual": "Self-check validated SHA256 and blocked startup",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-03",
+    "name": "Truncated Payload Injection",
+    "action": "Send 256 bytes for 1MB payload then close abruptly",
+    "expected": "Log socket warning, drain buffer, stay online",
+    "actual": "Worker recovered immediately and served subsequent request",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-04",
+    "name": "Oversized Payload Rejection",
+    "action": "Send request header specifying 5MB payload",
+    "expected": "Reject with status code 1, stay online",
+    "actual": "Worker rejected request with status 1",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-05",
+    "name": "Process Crash & Recovery",
+    "action": "SIGKILL active worker daemon and re-launch",
+    "expected": "Clean stale socket/PID, re-initialize QNN HTP, become READY",
+    "actual": "Worker re-initialized on Hexagon DSP and served inference",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-06",
+    "name": "Invalid Magic Number",
+    "action": "Send 0xDEADBEEF magic",
+    "expected": "Fall back to legacy raw or return error",
+    "actual": "Handled gracefully",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-07",
+    "name": "Empty Socket Connection",
+    "action": "Connect and immediately disconnect",
+    "expected": "Close client without worker crash",
+    "actual": "Handled gracefully",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-08",
+    "name": "Socket Timeout Handling",
+    "action": "Connect and hold socket open without data",
+    "expected": "Timeout after 5s and reclaim client fd",
+    "actual": "Poll timeout reclaimed client",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-09",
+    "name": "Rapid Connect/Disconnect Burst",
+    "action": "50 back-to-back connect/close cycles",
+    "expected": "Accept queue stays healthy without leak",
+    "actual": "100% queue retention",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-10",
+    "name": "Signal SIGINT Handling",
+    "action": "Send SIGINT to daemon",
+    "expected": "Clean QNN contextFree and deviceFree shutdown",
+    "actual": "Exited with code 0",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-11",
+    "name": "Signal SIGTERM Handling",
+    "action": "Send SIGTERM to daemon",
+    "expected": "Clean socket unlink and resource cleanup",
+    "actual": "Exited with code 0",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-12",
+    "name": "FastRPC Device Lock Contention",
+    "action": "Multiple threads querying DSP context",
+    "expected": "Serialized safely through QNN queue",
+    "actual": "Zero FastRPC bus collisions",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-13",
+    "name": "Corrupted Inference Mantissa",
+    "action": "All-zeros image buffer",
+    "expected": "Execute inference safely without NaN/Inf crash",
+    "actual": "Zero NaNs, valid background prediction",
+    "verdict": "PASS"
+  },
+  {
+    "test_id": "FIT-14",
+    "name": "High-Frequency Load Stress",
+    "action": "Continuous 1000-packet stream",
+    "expected": "Maintain bounded RSS and consistent latency",
+    "actual": "Zero memory growth",
+    "verdict": "PASS"
+  }
+]

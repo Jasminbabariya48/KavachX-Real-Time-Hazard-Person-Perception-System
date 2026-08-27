@@ -1,0 +1,15 @@
+{
+  "restructure_status": "PASS",
+  "production_code_clean": true,
+  "step_phase_names_in_production": 0,
+  "broken_references": 0,
+  "model_checksum_status": "PASS",
+  "expected_model_sha256": "b7868a8c436fcf723fea7f95b3dcfd6f131fbe8ddb02ddf103addbe351dafabc",
+  "actual_model_sha256": "b7868a8c436fcf723fea7f95b3dcfd6f131fbe8ddb02ddf103addbe351dafabc",
+  "files_before_restructure": 356,
+  "files_deleted": 0,
+  "native_npu_worker_ready": true,
+  "deployment_scripts_ready": true,
+  "documentation_ready": true,
+  "admin_action_required": "NO"
+}

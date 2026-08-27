@@ -1,0 +1,18 @@
+{
+  "phase": "Phase 3: INT8 Quantization + QNN HTP v68 Compilation",
+  "target_device": "Kavach-EdgeBox",
+  "active_user": "work_user2",
+  "groups": [
+    "work_user2",
+    "users",
+    "qairt-users"
+  ],
+  "render_group_membership": false,
+  "getent_group_render": "render:x:993:radxa,rock,devuser,test_user",
+  "etc_group_entry": "render:x:993:radxa,rock,devuser,test_user",
+  "fastrpc_node": "/dev/fastrpc-cdsp",
+  "fastrpc_permissions": "crw-rw----+ 1 root render",
+  "status": "PHASE_3_BLOCKED",
+  "root_cause": "Fresh SSH session directly confirmed work_user2 is not in /etc/group for render (group 993 contains radxa,rock,devuser,test_user).",
+  "required_admin_action": "sudo usermod -aG render work_user2"
+}

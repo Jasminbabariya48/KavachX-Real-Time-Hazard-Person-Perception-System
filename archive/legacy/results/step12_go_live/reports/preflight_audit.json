@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-27T15:48:49Z",
+  "platform": "Radxa Dragon Q6490 (Qualcomm QCS6490)",
+  "accelerator": "Qualcomm Hexagon v68 HTP DSP",
+  "fastrpc_device": "/dev/fastrpc-cdsp",
+  "fastrpc_accessible": true,
+  "frozen_model_path": "/home/work_user2/kawachx_task/models/3class_calibrated_final.bin",
+  "model_checksum_verified": true,
+  "expected_sha256": "b7868a8c436fcf723fea7f95b3dcfd6f131fbe8ddb02ddf103addbe351dafabc",
+  "actual_sha256": "b7868a8c436fcf723fea7f95b3dcfd6f131fbe8ddb02ddf103addbe351dafabc",
+  "detected_cameras": [
+    {
+      "device": "/dev/video0",
+      "accessible": false,
+      "streaming": false,
+      "resolution": null
+    },
+    {
+      "device": "/dev/video1",
+      "accessible": false,
+      "streaming": false,
+      "resolution": null
+    }
+  ],
+  "selected_camera_type": "video_file_stream",
+  "admin_action_required": "NO",
+  "status": "PASS"
+}

@@ -1,0 +1,30 @@
+{
+  "binary_1": {
+    "filename": "3class_calibrated_final.bin",
+    "size_bytes": 26800128,
+    "graph_name": "graph_en1elpeg",
+    "inputs": ["images"],
+    "outputs": ["output_0", "output_1"],
+    "tensor_count": {
+      "inputs": 1,
+      "outputs": 2
+    },
+    "contract_match_with_fp32_onnx": false,
+    "reason": "Binary has split output tensors (output_0, output_1) whereas FP32 ONNX has single concatenated output0 [1, 7, 8400]",
+    "status": "TENSOR_CONTRACT_MISMATCH"
+  },
+  "binary_2": {
+    "filename": "kawachx_aihub_split.bin",
+    "size_bytes": 26861568,
+    "graph_name": "graph_h9q5bh8w",
+    "inputs": ["images_uint8"],
+    "outputs": ["output_0", "output_1"],
+    "tensor_count": {
+      "inputs": 1,
+      "outputs": 2
+    },
+    "contract_match_with_fp32_onnx": false,
+    "reason": "Binary has input images_uint8 and split output tensors (output_0, output_1)",
+    "status": "TENSOR_CONTRACT_MISMATCH"
+  }
+}

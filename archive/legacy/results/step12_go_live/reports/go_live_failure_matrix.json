@@ -1,0 +1,17 @@
+[
+  {
+    "test": "Truncated IPC Payload",
+    "result": "PASS",
+    "behavior": "Worker safely closed connection without crashing"
+  },
+  {
+    "test": "Oversized Frame Rejection",
+    "result": "PASS",
+    "behavior": "Status code 1"
+  },
+  {
+    "test": "Supervisor Restart & FastRPC Reconnect",
+    "result": "PASS",
+    "behavior": "Worker restarted and FastRPC session re-established"
+  }
+]

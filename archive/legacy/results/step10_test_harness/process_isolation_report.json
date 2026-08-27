@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-26T19:00:37Z",
+  "active_worker_processes": [],
+  "stale_test_processes_detected": [
+    {
+      "pid": 216618,
+      "user": "work_us+",
+      "cpu": 0.0,
+      "mem": 0.0,
+      "cmd": "bash -c export ADSP_LIBRARY_PATH=\"/home/devuser/qairt/2.47.0.260601/lib/hexagon-v68/unsigned;/vendor/dsp/cdsp;/vendor/lib/rfsa/adsp;/dsp\"; export LD_LIBRARY_PATH=/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4:$LD_LIBRARY_PATH; python3 /home/work_user2/kawachx_task/run_step10_1_harness_test.py; TEST_RC=$?; exit $TEST_RC"
+    }
+  ],
+  "stale_processes_terminated": [
+    {
+      "pid": 216618,
+      "user": "work_us+",
+      "cpu": 0.0,
+      "mem": 0.0,
+      "cmd": "bash -c export ADSP_LIBRARY_PATH=\"/home/devuser/qairt/2.47.0.260601/lib/hexagon-v68/unsigned;/vendor/dsp/cdsp;/vendor/lib/rfsa/adsp;/dsp\"; export LD_LIBRARY_PATH=/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4:$LD_LIBRARY_PATH; python3 /home/work_user2/kawachx_task/run_step10_1_harness_test.py; TEST_RC=$?; exit $TEST_RC"
+    }
+  ],
+  "high_cpu_system_processes": [
+    {
+      "pid": 216635,
+      "user": "work_us+",
+      "cpu": 200.0,
+      "cmd": "ps -eo pid,user,pcpu,pmem,args"
+    }
+  ],
+  "isolation_status": "CLEAN"
+}

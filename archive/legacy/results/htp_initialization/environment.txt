@@ -1,0 +1,16 @@
+SHELL=/bin/bash
+PWD=/home/work_user2
+LOGNAME=work_user2
+XDG_SESSION_TYPE=tty
+HOME=/home/work_user2
+LANG=en_US.UTF-8
+SSH_CONNECTION=::1 48446 ::1 22
+XDG_SESSION_CLASS=user
+USER=work_user2
+SHLVL=0
+XDG_SESSION_ID=102
+XDG_RUNTIME_DIR=/run/user/1006
+SSH_CLIENT=::1 48446 22
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1006/bus
+_=/usr/bin/env

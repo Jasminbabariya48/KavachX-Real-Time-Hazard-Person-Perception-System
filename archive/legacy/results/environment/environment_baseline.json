@@ -1,0 +1,125 @@
+{
+  "device": {
+    "hostname": "Kavach-EdgeBox",
+    "soc_machine": "Radxa Dragon Q6A",
+    "soc_id": 498,
+    "soc_family": "Snapdragon",
+    "soc_name": "Qualcomm QCS6490",
+    "cpu_architecture": "aarch64",
+    "cpu_cores": 8,
+    "cpu_clusters": [
+      {
+        "model": "Cortex-A78",
+        "cores": 4,
+        "max_mhz": 2707.2
+      },
+      {
+        "model": "Cortex-A55",
+        "cores": 4,
+        "max_mhz": 1958.4
+      }
+    ],
+    "ram_total_gib": 7.4,
+    "swap_total_gib": 3.7
+  },
+  "os": {
+    "name": "KavachOS",
+    "version": "1.0",
+    "base": "Ubuntu 24.04 (noble)",
+    "kernel": "6.18.2-3-qcom"
+  },
+  "permissions": {
+    "user": "work_user2",
+    "uid": 1006,
+    "gid": 1006,
+    "groups": ["work_user2", "users", "qairt-users"],
+    "render_group_present": false,
+    "fastrpc_cdsp_access": "BLOCKED_EACCES",
+    "dma_heap_system_access": "BLOCKED_EACCES"
+  },
+  "qairt": {
+    "version": "2.47.0",
+    "build_id": "260601114230",
+    "flavor": "premium",
+    "sdk_root": "/home/devuser/qairt/2.47.0.260601"
+  },
+  "qnn": {
+    "backend_api_version": "2.18.0",
+    "include_path": "/home/devuser/qairt/2.47.0.260601/include/QNN",
+    "lib_path": "/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4"
+  },
+  "backends": {
+    "cpu": "libQnnCpu.so",
+    "gpu": "libQnnGpu.so",
+    "htp": "libQnnHtp.so"
+  },
+  "htp": {
+    "architecture": "v68",
+    "skel_library": "/home/devuser/qairt/2.47.0.260601/lib/hexagon-v68/unsigned/libQnnHtpV68Skel.so",
+    "stub_library": "/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnHtpV68Stub.so",
+    "status": "FOUND_AND_LINKABLE"
+  },
+  "toolchain": {
+    "gcc": "13.3.0",
+    "gplusplus": "13.3.0",
+    "make": "GNU Make 4.3",
+    "python": "3.12.3",
+    "glibc": "2.39"
+  },
+  "project": {
+    "worker_source_dir": "kawachx_task/npu_worker",
+    "worker_binary": "kawach_worker",
+    "build_status": "BUILT_SUCCESSFULLY",
+    "ipc_protocol": "Unix Domain Socket (/tmp/kawach_worker.sock)"
+  },
+  "models": {
+    "source_onnx": {
+      "path": "kawachx_task/models/new_3class_best_FP32.onnx",
+      "size_bytes": 103562434,
+      "input_shape": [1, 3, 640, 640],
+      "output_shape": [1, 7, 8400],
+      "classes": {
+        "0": "person",
+        "1": "fire",
+        "2": "smoke"
+      }
+    },
+    "prior_binaries": [
+      {
+        "filename": "3class_calibrated_final.bin",
+        "size_bytes": 27244544,
+        "status": "VERIFIED_FORMAT_UNEXECUTED"
+      },
+      {
+        "filename": "kawachx_aihub_split.bin",
+        "size_bytes": 27244544,
+        "status": "VERIFIED_FORMAT_UNEXECUTED"
+      }
+    ]
+  },
+  "test_images": [
+    {
+      "filename": "fire.jpg",
+      "resolution": [678, 452],
+      "size_bytes": 35373
+    },
+    {
+      "filename": "fire_2.jpg",
+      "resolution": [679, 452],
+      "size_bytes": 25969
+    },
+    {
+      "filename": "person.jpg",
+      "resolution": [678, 452],
+      "size_bytes": 17519
+    }
+  ],
+  "blockers": [
+    {
+      "id": "P0_RENDER_GROUP",
+      "severity": "CRITICAL_BLOCKING",
+      "description": "User work_user2 is not in the render group on Kavach-EdgeBox. Opening /dev/fastrpc-cdsp fails with EACCES (14001).",
+      "required_action": "Administrator must execute: sudo usermod -aG render work_user2"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Linux Kavach-EdgeBox 6.18.2-3-qcom #3 SMP PREEMPT_DYNAMIC Sat Feb 14 07:41:12 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+uid=1006(work_user2) gid=1006(work_user2) groups=1006(work_user2),100(users),1005(qairt-users)
+work_user2 users qairt-users
+ADSP_LIBRARY_PATH: /home/devuser/qairt/2.47.0.260601/lib/hexagon-v68/unsigned:/vendor/dsp/cdsp:/vendor/lib/rfsa/adsp

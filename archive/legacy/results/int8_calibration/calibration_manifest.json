@@ -1,0 +1,154 @@
+{
+  "manifest_version": "1.0.0",
+  "dataset_name": "KavachX_QCS6490_INT8_Calibration_Set",
+  "source_directory": "data\\test_images",
+  "total_samples": 3,
+  "input_contract": {
+    "model_input_tensor_name": "images",
+    "tensor_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "tensor_layout": "NCHW",
+    "color_format": "RGB",
+    "data_type": "float32 (normalized) / uint8 (hardware quant)",
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "letterbox_padding_color": [
+      114,
+      114,
+      114
+    ],
+    "normalization_formula": "pixel_val / 255.0",
+    "target_hexagon_quant_scheme": {
+      "scale": 0.00392156862745098,
+      "zero_point": 0,
+      "bits": 8,
+      "is_symmetric": false
+    },
+    "compatibility_with_fp32_baseline": true
+  },
+  "samples": [
+    {
+      "sample_id": "fire",
+      "original_filename": "fire.jpg",
+      "original_resolution": [
+        678,
+        452
+      ],
+      "preprocessed_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "raw_fp32_file": "results\\int8_calibration\\preprocessed\\fire_fp32.raw",
+      "raw_uint8_file": "results\\int8_calibration\\preprocessed\\fire_uint8.raw",
+      "scale_ratio": 0.943952802359882,
+      "pad_w_h": [
+        0.0,
+        106.5
+      ],
+      "stats": {
+        "filename": "fire.jpg",
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "dtype": "float32",
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.3236985504627228,
+        "std": 0.2152216136455536,
+        "zero_percentage": 0.09537760416666667,
+        "nan_count": 0,
+        "inf_count": 0,
+        "raw_size_bytes": 4915200
+      }
+    },
+    {
+      "sample_id": "fire_2",
+      "original_filename": "fire_2.jpg",
+      "original_resolution": [
+        679,
+        452
+      ],
+      "preprocessed_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "raw_fp32_file": "results\\int8_calibration\\preprocessed\\fire_2_fp32.raw",
+      "raw_uint8_file": "results\\int8_calibration\\preprocessed\\fire_2_uint8.raw",
+      "scale_ratio": 0.9425625920471281,
+      "pad_w_h": [
+        0.0,
+        107.0
+      ],
+      "stats": {
+        "filename": "fire_2.jpg",
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "dtype": "float32",
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.3137754499912262,
+        "std": 0.15575306117534637,
+        "zero_percentage": 0.10026041666666666,
+        "nan_count": 0,
+        "inf_count": 0,
+        "raw_size_bytes": 4915200
+      }
+    },
+    {
+      "sample_id": "person",
+      "original_filename": "person.jpg",
+      "original_resolution": [
+        678,
+        452
+      ],
+      "preprocessed_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "raw_fp32_file": "results\\int8_calibration\\preprocessed\\person_fp32.raw",
+      "raw_uint8_file": "results\\int8_calibration\\preprocessed\\person_uint8.raw",
+      "scale_ratio": 0.943952802359882,
+      "pad_w_h": [
+        0.0,
+        106.5
+      ],
+      "stats": {
+        "filename": "person.jpg",
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "dtype": "float32",
+        "min": 0.01568627543747425,
+        "max": 1.0,
+        "mean": 0.6925915479660034,
+        "std": 0.20375271141529083,
+        "zero_percentage": 0.0,
+        "nan_count": 0,
+        "inf_count": 0,
+        "raw_size_bytes": 4915200
+      }
+    }
+  ]
+}

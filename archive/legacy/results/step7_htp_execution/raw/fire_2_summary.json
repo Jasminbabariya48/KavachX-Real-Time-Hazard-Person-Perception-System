@@ -1,0 +1,20 @@
+{
+  "image": "/home/work_user2/kawachx_task/results/step7_htp_execution/inputs/fire_2_uint8.raw",
+  "model": "/home/work_user2/kawachx_task/models/3class_calibrated_final.bin",
+  "htp_execution_status": "PASS",
+  "benchmark_100_runs": {
+    "mean_ms": 21.78,
+    "median_ms": 21.70,
+    "min_ms": 21.43,
+    "max_ms": 22.91,
+    "p95_ms": 22.57,
+    "p99_ms": 22.91,
+    "fps": 45.9
+  },
+  "cpu_dfl_nms_ms": 0.43,
+  "total_end_to_end_ms": 22.21,
+  "detections_count": 1,
+  "detections": [
+    {"class_id": 2, "class_name": "person", "score": 0.5000, "bbox": [196.1, 195.5, 353.3, 391.1]}
+  ]
+}

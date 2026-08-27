@@ -1,0 +1,26 @@
+[Unit]
+Description=KawachX NPU Qualcomm Hexagon v68 HTP Detection Worker
+After=network.target
+
+[Service]
+Type=simple
+User=work_user2
+Group=render
+WorkingDirectory=/home/work_user2/kawachx_task
+Environment="ADSP_LIBRARY_PATH=/home/devuser/qairt/2.47.0.260601/lib/hexagon-v68/unsigned;/vendor/dsp/cdsp;/vendor/lib/rfsa/adsp;/dsp"
+Environment="LD_LIBRARY_PATH=/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4"
+
+ExecStart=/home/work_user2/kawachx_task/npu_worker/kawach_worker \
+    --backend /home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnHtp.so \
+    --system  /home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnSystem.so \
+    --model   /home/work_user2/kawachx_task/models/3class_calibrated_final.bin \
+    --socket  /tmp/kawach_worker.sock
+
+Restart=always
+RestartSec=1s
+KillMode=mixed
+TimeoutStopSec=5s
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

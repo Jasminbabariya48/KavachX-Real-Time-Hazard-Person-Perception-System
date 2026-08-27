@@ -1,0 +1,1045 @@
+{
+  "production_sources": [
+    {
+      "path": "src/npu_worker/ipc_handler.cpp",
+      "size_bytes": 4379
+    },
+    {
+      "path": "src/npu_worker/ipc_handler.hpp",
+      "size_bytes": 2196
+    },
+    {
+      "path": "src/npu_worker/main.cpp",
+      "size_bytes": 9909
+    },
+    {
+      "path": "src/npu_worker/Makefile",
+      "size_bytes": 703
+    },
+    {
+      "path": "src/npu_worker/qnn_inference.cpp",
+      "size_bytes": 16470
+    },
+    {
+      "path": "src/npu_worker/qnn_inference.hpp",
+      "size_bytes": 2991
+    },
+    {
+      "path": "src/stream/frame_source.py",
+      "size_bytes": 5917
+    },
+    {
+      "path": "src/stream/live_monitoring_server.py",
+      "size_bytes": 8312
+    },
+    {
+      "path": "src/stream/stream_pipeline.py",
+      "size_bytes": 13987
+    }
+  ],
+  "production_configs": [
+    {
+      "path": "config/kawach_worker.service",
+      "size_bytes": 905
+    },
+    {
+      "path": "config/production_config.json",
+      "size_bytes": 2878
+    },
+    {
+      "path": "config/qnn/htp_config.json",
+      "size_bytes": 305
+    }
+  ],
+  "production_models": [],
+  "service_files": [
+    {
+      "path": "scripts/service/kawach_service.py",
+      "size_bytes": 11558
+    }
+  ],
+  "testing_infrastructure": [
+    {
+      "path": "scripts/testing/bounded_stream_runner.py",
+      "size_bytes": 12542
+    },
+    {
+      "path": "scripts/testing/process_isolation.py",
+      "size_bytes": 3141
+    },
+    {
+      "path": "scripts/testing/run_step10_2_full_acceptance.py",
+      "size_bytes": 24094
+    }
+  ],
+  "debug_and_tools": [
+    {
+      "path": "scripts/tools/analyze_dfl_graph.py",
+      "size_bytes": 4180
+    },
+    {
+      "path": "scripts/tools/build_model_so_native.py",
+      "size_bytes": 1764
+    },
+    {
+      "path": "scripts/tools/check_deployment_readiness.py",
+      "size_bytes": 2611
+    },
+    {
+      "path": "scripts/tools/check_model_lib_gen.py",
+      "size_bytes": 447
+    },
+    {
+      "path": "scripts/tools/check_onnx_env.py",
+      "size_bytes": 557
+    },
+    {
+      "path": "scripts/tools/check_onnx_version.py",
+      "size_bytes": 409
+    },
+    {
+      "path": "scripts/tools/check_qnn_deps.py",
+      "size_bytes": 438
+    },
+    {
+      "path": "scripts/tools/check_skel_paths.py",
+      "size_bytes": 633
+    },
+    {
+      "path": "scripts/tools/check_step1_status.py",
+      "size_bytes": 2419
+    },
+    {
+      "path": "scripts/tools/compare_fp32_vs_htp.py",
+      "size_bytes": 4718
+    },
+    {
+      "path": "scripts/tools/create_htp_split_model.py",
+      "size_bytes": 2295
+    },
+    {
+      "path": "scripts/tools/debug_context_gen.py",
+      "size_bytes": 1289
+    },
+    {
+      "path": "scripts/tools/execute_htp_inference.cpp",
+      "size_bytes": 16784
+    },
+    {
+      "path": "scripts/tools/execute_step10_1_on_target.py",
+      "size_bytes": 1787
+    },
+    {
+      "path": "scripts/tools/execute_step10_2_on_target.py",
+      "size_bytes": 1625
+    },
+    {
+      "path": "scripts/tools/execute_step10_on_target.py",
+      "size_bytes": 2206
+    },
+    {
+      "path": "scripts/tools/execute_step8_on_target.py",
+      "size_bytes": 2624
+    },
+    {
+      "path": "scripts/tools/execute_step9_on_target.py",
+      "size_bytes": 2045
+    },
+    {
+      "path": "scripts/tools/experiment_1_pyramid_heads.py",
+      "size_bytes": 7235
+    },
+    {
+      "path": "scripts/tools/find_qnn_tools.py",
+      "size_bytes": 566
+    },
+    {
+      "path": "scripts/tools/fix_yolov8_dfl_slice.py",
+      "size_bytes": 1216
+    },
+    {
+      "path": "scripts/tools/gather_phase1_evidence.py",
+      "size_bytes": 3089
+    },
+    {
+      "path": "scripts/tools/generate_htp_binary.cpp",
+      "size_bytes": 5261
+    },
+    {
+      "path": "scripts/tools/generate_phase8_1_manifest.py",
+      "size_bytes": 4247
+    },
+    {
+      "path": "scripts/tools/generate_step11_audit_and_package.py",
+      "size_bytes": 13418
+    },
+    {
+      "path": "scripts/tools/generate_step4_report.py",
+      "size_bytes": 2193
+    },
+    {
+      "path": "scripts/tools/inspect_converted_qnn.py",
+      "size_bytes": 1219
+    },
+    {
+      "path": "scripts/tools/inspect_generator_help.py",
+      "size_bytes": 461
+    },
+    {
+      "path": "scripts/tools/inspect_onnx_nodes.py",
+      "size_bytes": 399
+    },
+    {
+      "path": "scripts/tools/inspect_onnx_tail.py",
+      "size_bytes": 509
+    },
+    {
+      "path": "scripts/tools/inspect_phase2.py",
+      "size_bytes": 1608
+    },
+    {
+      "path": "scripts/tools/inspect_qnn_details.py",
+      "size_bytes": 1485
+    },
+    {
+      "path": "scripts/tools/inspect_raw_htp_outputs.py",
+      "size_bytes": 1543
+    },
+    {
+      "path": "scripts/tools/inspect_remote_onnx.py",
+      "size_bytes": 756
+    },
+    {
+      "path": "scripts/tools/inspect_step7_model.cpp",
+      "size_bytes": 9781
+    },
+    {
+      "path": "scripts/tools/install_compat_onnx.py",
+      "size_bytes": 393
+    },
+    {
+      "path": "scripts/tools/install_converter_deps.py",
+      "size_bytes": 410
+    },
+    {
+      "path": "scripts/tools/prepare_int8_calibration.py",
+      "size_bytes": 11550
+    },
+    {
+      "path": "scripts/tools/prepare_step7_inputs.py",
+      "size_bytes": 3104
+    },
+    {
+      "path": "scripts/tools/print_quant_encodings.cpp",
+      "size_bytes": 2957
+    },
+    {
+      "path": "scripts/tools/run_full_assignment.py",
+      "size_bytes": 6128
+    },
+    {
+      "path": "scripts/tools/run_htp_compilation.py",
+      "size_bytes": 5046
+    },
+    {
+      "path": "scripts/tools/run_htp_context_generator.py",
+      "size_bytes": 1884
+    },
+    {
+      "path": "scripts/tools/run_htp_direct.py",
+      "size_bytes": 2090
+    },
+    {
+      "path": "scripts/tools/run_native_generator.py",
+      "size_bytes": 1388
+    },
+    {
+      "path": "scripts/tools/run_print_quant.py",
+      "size_bytes": 1505
+    },
+    {
+      "path": "scripts/tools/run_qnn_conversion.py",
+      "size_bytes": 2889
+    },
+    {
+      "path": "scripts/tools/run_remote.py",
+      "size_bytes": 630
+    },
+    {
+      "path": "scripts/tools/run_split_htp_compilation.py",
+      "size_bytes": 4140
+    },
+    {
+      "path": "scripts/tools/run_split_qnn_conversion.py",
+      "size_bytes": 1782
+    },
+    {
+      "path": "scripts/tools/run_stage2_context_gen.py",
+      "size_bytes": 1829
+    },
+    {
+      "path": "scripts/tools/run_step10_1_harness_test.py",
+      "size_bytes": 5756
+    },
+    {
+      "path": "scripts/tools/run_step10_live_stream_suite.py",
+      "size_bytes": 14232
+    },
+    {
+      "path": "scripts/tools/run_step7_full_pipeline.py",
+      "size_bytes": 3239
+    },
+    {
+      "path": "scripts/tools/run_step7_full_validation.py",
+      "size_bytes": 3157
+    },
+    {
+      "path": "scripts/tools/run_step7_init.py",
+      "size_bytes": 1697
+    },
+    {
+      "path": "scripts/tools/run_step7_worker_ipc_test.py",
+      "size_bytes": 1964
+    },
+    {
+      "path": "scripts/tools/run_step8_comprehensive_validation.py",
+      "size_bytes": 16220
+    },
+    {
+      "path": "scripts/tools/run_step9_acceptance_suite.py",
+      "size_bytes": 23387
+    },
+    {
+      "path": "scripts/tools/save_admin_fix_evidence.py",
+      "size_bytes": 1710
+    },
+    {
+      "path": "scripts/tools/save_step5_report.py",
+      "size_bytes": 2760
+    },
+    {
+      "path": "scripts/tools/test_aarch64_generator.py",
+      "size_bytes": 528
+    },
+    {
+      "path": "scripts/tools/test_adsp_env.py",
+      "size_bytes": 897
+    },
+    {
+      "path": "scripts/tools/test_all_generators.py",
+      "size_bytes": 1408
+    },
+    {
+      "path": "scripts/tools/test_backend_bin.py",
+      "size_bytes": 1329
+    },
+    {
+      "path": "scripts/tools/test_converter_help.py",
+      "size_bytes": 415
+    },
+    {
+      "path": "scripts/tools/test_default_output.py",
+      "size_bytes": 1376
+    },
+    {
+      "path": "scripts/tools/test_float_fallback.py",
+      "size_bytes": 3469
+    },
+    {
+      "path": "scripts/tools/test_genie_config.py",
+      "size_bytes": 1345
+    },
+    {
+      "path": "scripts/tools/test_htp_config.py",
+      "size_bytes": 1563
+    },
+    {
+      "path": "scripts/tools/test_htp_prepare.py",
+      "size_bytes": 1404
+    },
+    {
+      "path": "scripts/tools/test_htp_socs.py",
+      "size_bytes": 1253
+    },
+    {
+      "path": "scripts/tools/test_onnxsim_conversion.py",
+      "size_bytes": 1059
+    },
+    {
+      "path": "scripts/tools/test_simple_model.py",
+      "size_bytes": 3047
+    },
+    {
+      "path": "scripts/tools/test_ulimit.py",
+      "size_bytes": 944
+    },
+    {
+      "path": "scripts/tools/test_worker_init.py",
+      "size_bytes": 1574
+    },
+    {
+      "path": "scripts/tools/test_worker_ipc.py",
+      "size_bytes": 3758
+    },
+    {
+      "path": "scripts/tools/validate_split_model_cpu.py",
+      "size_bytes": 5921
+    },
+    {
+      "path": "scripts/tools/validate_with_ort.py",
+      "size_bytes": 4680
+    },
+    {
+      "path": "scripts/tools/verify_step2_after_admin.py",
+      "size_bytes": 2427
+    },
+    {
+      "path": "scripts/tools/verify_step2_htp.py",
+      "size_bytes": 2846
+    }
+  ],
+  "documentation": [
+    {
+      "path": "docs/01_PROJECT_OVERVIEW.md",
+      "size_bytes": 2199
+    },
+    {
+      "path": "docs/02_SETUP_AND_ACCESS.md",
+      "size_bytes": 1881
+    },
+    {
+      "path": "docs/03_MODEL_AND_ONNX.md",
+      "size_bytes": 1588
+    },
+    {
+      "path": "docs/04_CALIBRATION.md",
+      "size_bytes": 1398
+    },
+    {
+      "path": "docs/05_QNN_CONVERSION.md",
+      "size_bytes": 1580
+    },
+    {
+      "path": "docs/06_NPU_RUNTIME.md",
+      "size_bytes": 2167
+    },
+    {
+      "path": "docs/07_VALIDATION_AND_PARITY.md",
+      "size_bytes": 2055
+    },
+    {
+      "path": "docs/08_BENCHMARK.md",
+      "size_bytes": 2008
+    },
+    {
+      "path": "docs/09_TROUBLESHOOTING.md",
+      "size_bytes": 1795
+    },
+    {
+      "path": "docs/10_FINAL_ASSESSMENT.md",
+      "size_bytes": 2258
+    },
+    {
+      "path": "docs/11_HARDWARE_AND_SDK_BASELINE.md",
+      "size_bytes": 4405
+    },
+    {
+      "path": "docs/12_MODEL_AND_EXISTING_BINARY_VALIDATION.md",
+      "size_bytes": 3309
+    },
+    {
+      "path": "docs/13_INT8_QUANTIZATION_AND_COMPILATION.md",
+      "size_bytes": 2725
+    },
+    {
+      "path": "docs/PROJECT_STRUCTURE.md",
+      "size_bytes": 4512
+    },
+    {
+      "path": "docs/STEP_10_1_TEST_HARNESS.md",
+      "size_bytes": 2916
+    },
+    {
+      "path": "docs/STEP_10_2_FULL_LIVE_STREAM_ACCEPTANCE.md",
+      "size_bytes": 5717
+    },
+    {
+      "path": "docs/STEP_6_HTP_GRAPH_COMPATIBILITY.md",
+      "size_bytes": 7823
+    },
+    {
+      "path": "docs/STEP_7_REAL_HTP_EXECUTION.md",
+      "size_bytes": 5446
+    },
+    {
+      "path": "docs/STEP_8_PRODUCTION_INTEGRATION.md",
+      "size_bytes": 9655
+    },
+    {
+      "path": "docs/STEP_9_PRODUCTION_DEPLOYMENT.md",
+      "size_bytes": 8902
+    }
+  ],
+  "results_reports": [
+    {
+      "path": "results/benchmark_schema.json",
+      "size_bytes": 309
+    },
+    {
+      "path": "results/FINAL_STATUS.md",
+      "size_bytes": 2421
+    },
+    {
+      "path": "results/environment/environment_baseline.json",
+      "size_bytes": 3283
+    },
+    {
+      "path": "results/environment/hardware.txt",
+      "size_bytes": 4328
+    },
+    {
+      "path": "results/environment/permissions.txt",
+      "size_bytes": 632
+    },
+    {
+      "path": "results/environment/PHASE_1_STATUS.md",
+      "size_bytes": 2182
+    },
+    {
+      "path": "results/environment/project_inspection.txt",
+      "size_bytes": 2778
+    },
+    {
+      "path": "results/environment/qnn_libraries.txt",
+      "size_bytes": 5789
+    },
+    {
+      "path": "results/environment/qnn_sdk.txt",
+      "size_bytes": 3682
+    },
+    {
+      "path": "results/environment/qnn_tools.txt",
+      "size_bytes": 5215
+    },
+    {
+      "path": "results/environment/toolchain.txt",
+      "size_bytes": 279
+    },
+    {
+      "path": "results/fp32_baseline/fp32_baseline_report.json",
+      "size_bytes": 3442
+    },
+    {
+      "path": "results/fp32_baseline/raw_outputs/fire_2_raw.npy",
+      "size_bytes": 235328
+    },
+    {
+      "path": "results/fp32_baseline/raw_outputs/fire_raw.npy",
+      "size_bytes": 235328
+    },
+    {
+      "path": "results/fp32_baseline/raw_outputs/person_raw.npy",
+      "size_bytes": 235328
+    },
+    {
+      "path": "results/fp32_baseline/visualizations/fire_2_pred.jpg",
+      "size_bytes": 62646
+    },
+    {
+      "path": "results/fp32_baseline/visualizations/fire_pred.jpg",
+      "size_bytes": 85149
+    },
+    {
+      "path": "results/fp32_baseline/visualizations/person_pred.jpg",
+      "size_bytes": 46857
+    },
+    {
+      "path": "results/htp_compilation/logs/context_gen_stderr.log",
+      "size_bytes": 153
+    },
+    {
+      "path": "results/htp_compilation/logs/context_gen_stdout.log",
+      "size_bytes": 553
+    },
+    {
+      "path": "results/htp_compilation/logs/direct_gen_stderr.log",
+      "size_bytes": 153
+    },
+    {
+      "path": "results/htp_compilation/logs/direct_gen_stdout.log",
+      "size_bytes": 937
+    },
+    {
+      "path": "results/htp_compilation/logs/model_lib_gen_stderr.log",
+      "size_bytes": 1402
+    },
+    {
+      "path": "results/htp_compilation/logs/model_lib_gen_stdout.log",
+      "size_bytes": 806
+    },
+    {
+      "path": "results/htp_compilation/logs/native_gen_stderr.log",
+      "size_bytes": 153
+    },
+    {
+      "path": "results/htp_compilation/logs/native_gen_stdout.log",
+      "size_bytes": 915
+    },
+    {
+      "path": "results/htp_compilation/reports/compilation_report.json",
+      "size_bytes": 1947
+    },
+    {
+      "path": "results/htp_compilation/reports/dfl_graph_analysis.json",
+      "size_bytes": 5976
+    },
+    {
+      "path": "results/htp_compilation/reports/split_model_validation.json",
+      "size_bytes": 1925
+    },
+    {
+      "path": "results/htp_compilation_split/reports/step6_report.json",
+      "size_bytes": 2969
+    },
+    {
+      "path": "results/htp_initialization/environment.txt",
+      "size_bytes": 458
+    },
+    {
+      "path": "results/htp_initialization/fastrpc_device.txt",
+      "size_bytes": 491
+    },
+    {
+      "path": "results/htp_initialization/fastrpc_device_admin_fix.txt",
+      "size_bytes": 491
+    },
+    {
+      "path": "results/htp_initialization/fastrpc_device_after_admin.txt",
+      "size_bytes": 491
+    },
+    {
+      "path": "results/htp_initialization/groups.txt",
+      "size_bytes": 30
+    },
+    {
+      "path": "results/htp_initialization/groups_admin_fix.txt",
+      "size_bytes": 37
+    },
+    {
+      "path": "results/htp_initialization/groups_after_admin.txt",
+      "size_bytes": 30
+    },
+    {
+      "path": "results/htp_initialization/id.txt",
+      "size_bytes": 96
+    },
+    {
+      "path": "results/htp_initialization/id_admin_fix.txt",
+      "size_bytes": 108
+    },
+    {
+      "path": "results/htp_initialization/id_after_admin.txt",
+      "size_bytes": 96
+    },
+    {
+      "path": "results/htp_initialization/render_group.txt",
+      "size_bytes": 43
+    },
+    {
+      "path": "results/htp_initialization/render_group_admin_fix.txt",
+      "size_bytes": 64
+    },
+    {
+      "path": "results/htp_initialization/render_group_after_admin.txt",
+      "size_bytes": 43
+    },
+    {
+      "path": "results/htp_initialization/runtime_environment.txt",
+      "size_bytes": 366
+    },
+    {
+      "path": "results/htp_initialization/worker_exit_code.txt",
+      "size_bytes": 3
+    },
+    {
+      "path": "results/htp_initialization/worker_exit_code_admin_fix.txt",
+      "size_bytes": 3
+    },
+    {
+      "path": "results/htp_initialization/worker_inspect.txt",
+      "size_bytes": 708
+    },
+    {
+      "path": "results/htp_initialization/worker_stderr.txt",
+      "size_bytes": 88
+    },
+    {
+      "path": "results/htp_initialization/worker_stderr_admin_fix.txt",
+      "size_bytes": 334
+    },
+    {
+      "path": "results/htp_initialization/worker_stderr_after_admin.txt",
+      "size_bytes": 88
+    },
+    {
+      "path": "results/htp_initialization/worker_stdout.txt",
+      "size_bytes": 942
+    },
+    {
+      "path": "results/htp_initialization/worker_stdout_admin_fix.txt",
+      "size_bytes": 74
+    },
+    {
+      "path": "results/htp_initialization/worker_stdout_after_admin.txt",
+      "size_bytes": 948
+    },
+    {
+      "path": "results/int8_calibration/calibration_manifest.json",
+      "size_bytes": 3673
+    },
+    {
+      "path": "results/int8_calibration/input_contract.json",
+      "size_bytes": 572
+    },
+    {
+      "path": "results/int8_calibration/input_list.txt",
+      "size_bytes": 316
+    },
+    {
+      "path": "results/int8_calibration/README.md",
+      "size_bytes": 780
+    },
+    {
+      "path": "results/int8_calibration/validation_report.json",
+      "size_bytes": 1469
+    },
+    {
+      "path": "results/int8_calibration/images/fire.jpg",
+      "size_bytes": 35373
+    },
+    {
+      "path": "results/int8_calibration/images/fire_2.jpg",
+      "size_bytes": 25969
+    },
+    {
+      "path": "results/int8_calibration/images/person.jpg",
+      "size_bytes": 17519
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/fire_2_fp32.npy",
+      "size_bytes": 4915328
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/fire_2_fp32.raw",
+      "size_bytes": 4915200
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/fire_2_uint8.raw",
+      "size_bytes": 1228800
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/fire_fp32.npy",
+      "size_bytes": 4915328
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/fire_fp32.raw",
+      "size_bytes": 4915200
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/fire_uint8.raw",
+      "size_bytes": 1228800
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/person_fp32.npy",
+      "size_bytes": 4915328
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/person_fp32.raw",
+      "size_bytes": 4915200
+    },
+    {
+      "path": "results/int8_calibration/preprocessed/person_uint8.raw",
+      "size_bytes": 1228800
+    },
+    {
+      "path": "results/int8_calibration/visualizations/fire_2_letterbox_640x640.jpg",
+      "size_bytes": 82888
+    },
+    {
+      "path": "results/int8_calibration/visualizations/fire_letterbox_640x640.jpg",
+      "size_bytes": 96533
+    },
+    {
+      "path": "results/int8_calibration/visualizations/person_letterbox_640x640.jpg",
+      "size_bytes": 53219
+    },
+    {
+      "path": "results/model_validation/existing_binary_validation.json",
+      "size_bytes": 933
+    },
+    {
+      "path": "results/model_validation/model_baseline.json",
+      "size_bytes": 941
+    },
+    {
+      "path": "results/model_validation/npu_execution_test.json",
+      "size_bytes": 542
+    },
+    {
+      "path": "results/model_validation/PHASE_2_STATUS.md",
+      "size_bytes": 1476
+    },
+    {
+      "path": "results/qnn_int8_conversion/generated/model_qnn_int8.bin",
+      "size_bytes": 26030080
+    },
+    {
+      "path": "results/qnn_int8_conversion/generated/model_qnn_int8.cpp",
+      "size_bytes": 3721571
+    },
+    {
+      "path": "results/qnn_int8_conversion/generated/model_qnn_int8_net.json",
+      "size_bytes": 8721065
+    },
+    {
+      "path": "results/qnn_int8_conversion/input/input_list.txt",
+      "size_bytes": 274
+    },
+    {
+      "path": "results/qnn_int8_conversion/logs/converter_stderr.log",
+      "size_bytes": 973
+    },
+    {
+      "path": "results/qnn_int8_conversion/logs/converter_stdout.log",
+      "size_bytes": 2947
+    },
+    {
+      "path": "results/qnn_int8_conversion/reports/conversion_report.json",
+      "size_bytes": 1573
+    },
+    {
+      "path": "results/quantization/PHASE_3_STATUS.md",
+      "size_bytes": 935
+    },
+    {
+      "path": "results/quantization/quantization_summary.json",
+      "size_bytes": 701
+    },
+    {
+      "path": "results/step10_live_stream/reports/acceptance_matrix.json",
+      "size_bytes": 6308
+    },
+    {
+      "path": "results/step10_live_stream/reports/concurrency_report.json",
+      "size_bytes": 344
+    },
+    {
+      "path": "results/step10_live_stream/reports/latency_report.json",
+      "size_bytes": 290
+    },
+    {
+      "path": "results/step10_live_stream/reports/memory_stability_report.json",
+      "size_bytes": 140
+    },
+    {
+      "path": "results/step10_live_stream/reports/step10_2_report.json",
+      "size_bytes": 552
+    },
+    {
+      "path": "results/step10_test_harness/cleanup_report.json",
+      "size_bytes": 229
+    },
+    {
+      "path": "results/step10_test_harness/process_isolation_report.json",
+      "size_bytes": 1241
+    },
+    {
+      "path": "results/step10_test_harness/smoke_test_report.json",
+      "size_bytes": 1257
+    },
+    {
+      "path": "results/step11_final/checksums.sha256",
+      "size_bytes": 890
+    },
+    {
+      "path": "results/step11_final/production_manifest.json",
+      "size_bytes": 3386
+    },
+    {
+      "path": "results/step11_final/reports/final_acceptance_matrix.json",
+      "size_bytes": 1846
+    },
+    {
+      "path": "results/step11_final/reports/repository_inventory.json",
+      "size_bytes": 26515
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/fire_2_bbox_fp32.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/fire_2_class_fp32.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/fire_2_output0_fp32.raw",
+      "size_bytes": 235200
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/fire_bbox_fp32.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/fire_class_fp32.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/fire_output0_fp32.raw",
+      "size_bytes": 235200
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/person_bbox_fp32.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/person_class_fp32.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/fp32_reference/person_output0_fp32.raw",
+      "size_bytes": 235200
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_2_bbox_htp_dequant.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_2_bbox_htp_int8.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_2_bbox_htp_uint8.raw",
+      "size_bytes": 537600
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_2_class_htp_dequant.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_2_class_htp_int8.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_2_class_htp_uint8.raw",
+      "size_bytes": 25200
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_2_summary.json",
+      "size_bytes": 594
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_bbox_htp_dequant.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_bbox_htp_int8.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_bbox_htp_uint8.raw",
+      "size_bytes": 537600
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_class_htp_dequant.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_class_htp_int8.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_class_htp_uint8.raw",
+      "size_bytes": 25200
+    },
+    {
+      "path": "results/step7_htp_execution/raw/fire_summary.json",
+      "size_bytes": 890
+    },
+    {
+      "path": "results/step7_htp_execution/raw/person_bbox_htp_dequant.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/raw/person_bbox_htp_int8.raw",
+      "size_bytes": 2150400
+    },
+    {
+      "path": "results/step7_htp_execution/raw/person_bbox_htp_uint8.raw",
+      "size_bytes": 537600
+    },
+    {
+      "path": "results/step7_htp_execution/raw/person_class_htp_dequant.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/raw/person_class_htp_int8.raw",
+      "size_bytes": 100800
+    },
+    {
+      "path": "results/step7_htp_execution/raw/person_class_htp_uint8.raw",
+      "size_bytes": 25200
+    },
+    {
+      "path": "results/step7_htp_execution/raw/person_summary.json",
+      "size_bytes": 690
+    },
+    {
+      "path": "results/step7_htp_execution/reports/numerical_parity_report.json",
+      "size_bytes": 5141
+    },
+    {
+      "path": "results/step7_htp_execution/reports/step7_report.json",
+      "size_bytes": 2646
+    },
+    {
+      "path": "results/step8_production/checksums.sha256",
+      "size_bytes": 642
+    },
+    {
+      "path": "results/step8_production/manifest.json",
+      "size_bytes": 3267
+    },
+    {
+      "path": "results/step8_production/reports/fp32_int8_parity.json",
+      "size_bytes": 1859
+    },
+    {
+      "path": "results/step8_production/reports/step8_report.json",
+      "size_bytes": 6640
+    },
+    {
+      "path": "results/step9_production/checksums.sha256",
+      "size_bytes": 636
+    },
+    {
+      "path": "results/step9_production/manifest.json",
+      "size_bytes": 1873
+    },
+    {
+      "path": "results/step9_production/reports/acceptance_matrix.json",
+      "size_bytes": 409
+    },
+    {
+      "path": "results/step9_production/reports/failure_injection.json",
+      "size_bytes": 3674
+    },
+    {
+      "path": "results/step9_production/reports/performance_regression.json",
+      "size_bytes": 766
+    },
+    {
+      "path": "results/step9_production/reports/step9_report.json",
+      "size_bytes": 5344
+    }
+  ]
+}

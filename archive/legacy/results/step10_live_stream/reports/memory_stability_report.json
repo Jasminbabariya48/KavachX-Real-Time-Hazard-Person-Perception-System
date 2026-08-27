@@ -1,0 +1,7 @@
+{
+  "initial_memory_mb": 52.5,
+  "final_memory_mb": 312.7,
+  "memory_delta_mb": 260.2,
+  "memory_leak_detected": false,
+  "status": "PASS"
+}

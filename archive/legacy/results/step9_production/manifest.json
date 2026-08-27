@@ -1,0 +1,47 @@
+{
+  "production_release": "KavachX NPU v1.0 Final Production Release",
+  "acceptance_status": "PASS",
+  "target_hardware": {
+    "board": "Radxa Dragon Q6490 / Qualcomm QCS6490",
+    "architecture": "aarch64-linux-gnu",
+    "dsp_core": "Qualcomm Hexagon v68 HTP",
+    "qairt_sdk_version": "2.47.0.260601",
+    "fastrpc_device": "/dev/fastrpc-cdsp (GID 993 render, 0660)"
+  },
+  "service_lifecycle": {
+    "supervisor": "scripts/service/kawach_service.py",
+    "systemd_unit": "config/kawach_worker.service",
+    "ipc_socket": "/tmp/kawach_worker.sock",
+    "health_file": "/tmp/kawach_health.json",
+    "commands": ["start", "stop", "restart", "status", "supervise", "self-check"]
+  },
+  "frozen_artifacts": {
+    "models/3class_calibrated_final.bin": {
+      "sha256": "b7868a8c436fcf723fea7f95b3dcfd6f131fbe8ddb02ddf103addbe351dafabc",
+      "size_bytes": 26800128,
+      "role": "Production HTP v68 Context Binary"
+    },
+    "models/kawachx_aihub_split.bin": {
+      "sha256": "42262ba02f418c6b5efd1c4937a51fe3b901d0fbe2c331b2e39bf5a529f3f9b0",
+      "size_bytes": 26861568,
+      "role": "AI Hub Split HTP Binary"
+    },
+    "models/new_3class_best_FP32_htp_split.onnx": {
+      "sha256": "62e7b54658ce06fbd7a23e6f033ef90865ad49e88222116aba0e04e32c4990c8",
+      "size_bytes": 103421300,
+      "role": "Validated FP32 Split ONNX Reference"
+    },
+    "src/npu_worker/kawach_worker": {
+      "sha256": "37636dc797d89610f60714fc0e7dcfae4184cfaf96f7c9e0d16cf29cecf1eeb7",
+      "size_bytes": 76008,
+      "role": "Hardened C++ Production Daemon"
+    }
+  },
+  "neural_network_execution": {
+    "hardware_target": "Qualcomm Hexagon v68 HTP DSP",
+    "cpu_gpu_fallback": false,
+    "fastrpc_active": true,
+    "quantization": "INT8 (images: uint8, output_0: uint8, output_1: uint8)",
+    "post_processing": "CPU vectorized DFL decode + anchor projection + NMS (<1ms)"
+  }
+}

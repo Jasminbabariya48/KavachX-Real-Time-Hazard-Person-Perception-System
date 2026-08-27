@@ -1,0 +1,73 @@
+/home/devuser/qairt/2.47.0.260601/bin/aarch64-ubuntu-gcc9.4:
+total 63196
+drwxr-x---  2 devuser qairt-users     4096 Jun  1 14:22 .
+drwxr-x--- 10 devuser qairt-users     4096 Jun  1 14:22 ..
+-rwxr-x---  1 devuser qairt-users  7343192 Jun  1 14:21 qairt-dlc-prepare
+-rwxr-x---  1 devuser qairt-users  7650392 Jun  1 14:21 qairt-net-run
+-rwxr-x---  1 devuser qairt-users  7162784 Jun  1 14:21 qnn-context-binary-generator
+-rwxr-x---  1 devuser qairt-users  7211920 Jun  1 14:21 qnn-net-run
+-rwxr-x---  1 devuser qairt-users   506288 Jun  1 14:21 qnn-platform-validator
+-rwxr-x---  1 devuser qairt-users   256112 Jun  1 14:21 qnn-profile-viewer
+-rwxr-x---  1 devuser qairt-users  7539616 Jun  1 14:21 qnn-throughput-net-run
+-rwxr-x---  1 devuser qairt-users  4739328 Jun  1 14:22 qtld-net-run
+-rwxr-x---  1 devuser qairt-users   743560 Jun  1 14:21 snpe-net-run
+-rwxr-x---  1 devuser qairt-users   364016 Jun  1 14:21 snpe-parallel-run
+-rwxr-x---  1 devuser qairt-users 20045976 Jun  1 14:21 snpe-platform-validator
+-rwxr-x---  1 devuser qairt-users  1118496 Jun  1 14:21 snpe-throughput-net-run
+
+/home/devuser/qairt/2.47.0.260601/bin/x86_64-linux-clang:
+total 94248
+drwxr-x---  2 devuser qairt-users     4096 Jun  1 14:22 .
+drwxr-x--- 10 devuser qairt-users     4096 Jun  1 14:22 ..
+-rwxr-x---  1 devuser qairt-users   584032 Jun  1 14:21 genie-app
+-rwxr-x---  1 devuser qairt-users    63768 Jun  1 14:21 genie-t2e-run
+-rwxr-x---  1 devuser qairt-users   141632 Jun  1 14:21 genie-t2t-run
+-rwxr-x---  1 devuser qairt-users     2744 Jun  1 14:21 qairt-accuracy-debugger
+-rwxr-x---  1 devuser qairt-users     5532 Jun  1 14:21 qairt-accuracy-evaluator
+-rwxr-x---  1 devuser qairt-users    20322 Jun  1 14:21 qairt-converter
+-rwxr-x---  1 devuser qairt-users     5219 Jun  1 14:21 qairt-dlc-diff
+-rwxr-x---  1 devuser qairt-users     2763 Jun  1 14:21 qairt-dlc-info
+-rwxr-x---  1 devuser qairt-users  7093648 Jun  1 14:21 qairt-dlc-prepare
+-rwxr-x---  1 devuser qairt-users     2731 Jun  1 14:21 qairt-dlc-to-json
+-rwxr-x---  1 devuser qairt-users 14988424 Jun  1 14:21 qairt-lora-adapter-bin-updater
+-rwxr-x---  1 devuser qairt-users     6397 Jun  1 14:21 qairt-lora-importer
+-rwxr-x---  1 devuser qairt-users     3365 Jun  1 14:21 qairt-lora-mapper
+-rwxr-x---  1 devuser qairt-users     5072 Jun  1 14:21 qairt-lora-model-creator
+-rwxr-x---  1 devuser qairt-users  7355808 Jun  1 14:21 qairt-net-run
+-rwxr-x---  1 devuser qairt-users     6450 Jun  1 14:21 qairt-quantizer
+-rwxr-x---  1 devuser qairt-users     2775 Jun  1 14:21 qnn-accuracy-debugger
+-rwxr-x---  1 devuser qairt-users     3891 Jun  1 14:21 qnn-architecture-checker
+-rwxr-x---  1 devuser qairt-users  7236672 Jun  1 14:21 qnn-context-binary-generator
+-rwxr-x---  1 devuser qairt-users   604480 Jun  1 14:21 qnn-context-binary-utility
+-rwxr-x---  1 devuser qairt-users     2643 Jun  1 14:21 qnn-genai-transformer-composer
+-rwxr-x---  1 devuser qairt-users    24029 Jun  1 14:21 qnn-model-lib-generator
+-rwxr-x---  1 devuser qairt-users  7302208 Jun  1 14:21 qnn-net-run
+-rwxr-x---  1 devuser qairt-users     5365 Jun  1 14:21 qnn-onnx-converter
+-rwxr-x---  1 devuser qairt-users      779 Jun  1 14:21 qnn-op-package-generator
+-rwxr-x---  1 devuser qairt-users    13321 Jun  1 14:21 qnn-platform-validator
+-rwxr-x---  1 devuser qairt-users   301368 Jun  1 14:21 qnn-profile-viewer
+-rwxr-x---  1 devuser qairt-users     4082 Jun  1 14:21 qnn-pytorch-converter
+-rwxr-x---  1 devuser qairt-users     5372 Jun  1 14:21 qnn-tensorflow-converter
+-rwxr-x---  1 devuser qairt-users     3386 Jun  1 14:21 qnn-tflite-converter
+-rwxr-x---  1 devuser qairt-users  7642208 Jun  1 14:21 qnn-throughput-net-run
+-rwxr-x---  1 devuser qairt-users   170736 Jun  1 14:22 qtld-profile-viewer
+-rwxr-x---  1 devuser qairt-users     2637 Jun  1 14:21 snpe-accuracy-debugger
+-rwxr-x---  1 devuser qairt-users     3546 Jun  1 14:21 snpe-architecture-checker
+-rwxr-x---  1 devuser qairt-users   596792 Jun  1 14:21 snpe-diagview
+-rwxr-x---  1 devuser qairt-users     4688 Jun  1 14:21 snpe-dlc-diff
+-rwxr-x---  1 devuser qairt-users 19889728 Jun  1 14:21 snpe-dlc-graph-prepare
+-rwxr-x---  1 devuser qairt-users     2415 Jun  1 14:21 snpe-dlc-info
+-rwxr-x---  1 devuser qairt-users 19282880 Jun  1 14:21 snpe-dlc-quant
+-rwxr-x---  1 devuser qairt-users    24530 Jun  1 14:21 snpe-dlc-quantize
+-rwxr-x---  1 devuser qairt-users    14884 Jun  1 14:21 snpe-dlc-viewer
+-rwxr-x---  1 devuser qairt-users  1042752 Jun  1 14:21 snpe-net-run
+-rwxr-x---  1 devuser qairt-users     3599 Jun  1 14:21 snpe-onnx-to-dlc
+-rwxr-x---  1 devuser qairt-users   478896 Jun  1 14:21 snpe-parallel-run
+-rwxr-x---  1 devuser qairt-users    10009 Jun  1 14:21 snpe-platform-validator-py
+-rwxr-x---  1 devuser qairt-users     2898 Jun  1 14:21 snpe-pytorch-to-dlc
+-rwxr-x---  1 devuser qairt-users     3059 Jun  1 14:21 snpe-tensorflow-to-dlc
+-rwxr-x---  1 devuser qairt-users     2662 Jun  1 14:21 snpe-tflite-to-dlc
+-rwxr-x---  1 devuser qairt-users  1446112 Jun  1 14:21 snpe-throughput-net-run
+-rwxr-x---  1 devuser qairt-users     1133 Jun  1 14:21 snpe-udo-package-generator
+qnn-net-run pid:15132
+QNN SDK v2.47.0.260601114230

@@ -1,0 +1,16 @@
+{
+  "model": "",
+  "platform": "",
+  "runtime": "",
+  "backend": "",
+  "precision": "",
+  "input_shape": [],
+  "num_samples": 0,
+  "warmup_runs": 0,
+  "measured_runs": 0,
+  "mean_latency_ms": null,
+  "median_latency_ms": null,
+  "p95_latency_ms": null,
+  "throughput_fps": null,
+  "fallback_detected": null
+}

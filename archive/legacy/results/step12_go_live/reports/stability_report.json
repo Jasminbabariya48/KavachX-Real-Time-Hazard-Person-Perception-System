@@ -1,0 +1,10 @@
+{
+  "sustained_frames_processed": 153,
+  "htp_errors": 0,
+  "cpu_fallback_count": 0,
+  "rss_memory_start_mb": 97.0,
+  "rss_memory_end_mb": 135.6,
+  "memory_delta_mb": 38.7,
+  "memory_leak_detected": false,
+  "status": "PASS"
+}

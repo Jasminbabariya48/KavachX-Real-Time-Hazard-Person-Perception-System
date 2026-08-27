@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-26T19:00:42Z",
+  "worker_alive_and_ready": true,
+  "no_zombie_test_processes": true,
+  "ipc_socket_healthy": true,
+  "smoke_test_verdict": "PASS",
+  "recovery_test_verdict": "PASS",
+  "verdict": "PASS"
+}

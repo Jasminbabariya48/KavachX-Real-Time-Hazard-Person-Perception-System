@@ -1,0 +1,19 @@
+{
+  "step": "Step 10.2 \u2014 Full Bounded Live-Stream Acceptance Suite",
+  "verdict": "PASS",
+  "passed_tests": "10/10",
+  "real_qualcomm_htp": true,
+  "cpu_fallback_count": 0,
+  "fastrpc_active": true,
+  "mean_latency_ms": 61.92,
+  "p95_latency_ms": 68.69,
+  "throughput_fps": 13.3,
+  "concurrency_8_clients_fps": 8.9,
+  "disconnect_recovery": "PASS",
+  "malformed_recovery": "PASS",
+  "worker_restart_recovery": "PASS",
+  "memory_stability": "PASS",
+  "event_pipeline": "PASS",
+  "cleanup_status": "PASS",
+  "recruiter_admin_action_required": "NO"
+}

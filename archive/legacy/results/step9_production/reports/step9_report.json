@@ -1,0 +1,238 @@
+{
+  "step": "Step 9 \u2014 Production Deployment, Service Lifecycle & Final Acceptance",
+  "production_ready": true,
+  "real_htp_proven": true,
+  "cpu_gpu_fallback": false,
+  "fastrpc_status": "PASS",
+  "service_lifecycle": "PASS",
+  "fault_recovery": "PASS",
+  "security_audit": "PASS",
+  "alert_pipeline": "PASS",
+  "recruiter_admin_action_required": "NO",
+  "acceptance_gates": {
+    "gate_01_artifact_checksums": "PASS",
+    "gate_02_security_permissions": "PASS",
+    "gate_03_service_start_ready": "PASS",
+    "gate_04_service_restart": "PASS",
+    "gate_05_real_htp_parity": "PASS",
+    "gate_06_100_frame_benchmark": "PASS",
+    "gate_07_concurrency_stress": "PASS",
+    "gate_08_failure_injection_matrix": "PASS",
+    "gate_09_alert_event_pipeline": "PASS",
+    "gate_10_sustained_stability": "PASS"
+  },
+  "baseline_parity": {
+    "fire": {
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.85546875,
+          "bbox": [
+            327.0,
+            120.3,
+            495.2,
+            289.5
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "score": 0.5,
+          "bbox": [
+            269.0,
+            350.9,
+            308.3,
+            378.9
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.5,
+          "bbox": [
+            201.7,
+            172.8,
+            337.4,
+            344.7
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "score": 0.5,
+          "bbox": [
+            200.7,
+            175.3,
+            338.1,
+            344.2
+          ]
+        }
+      ],
+      "infer_ms": 35.517,
+      "status": "PASS"
+    },
+    "fire_2": {
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.5,
+          "bbox": [
+            196.1,
+            195.5,
+            353.3,
+            391.1
+          ]
+        }
+      ],
+      "infer_ms": 34.956,
+      "status": "PASS"
+    },
+    "person": {
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.85546875,
+          "bbox": [
+            200.3,
+            234.2,
+            277.7,
+            468.5
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.79296875,
+          "bbox": [
+            296.2,
+            213.0,
+            359.6,
+            493.1
+          ]
+        }
+      ],
+      "infer_ms": 30.279,
+      "status": "PASS"
+    }
+  },
+  "performance": {
+    "mean_ms": 30.13723,
+    "median_ms": 30.131,
+    "min_ms": 29.978,
+    "max_ms": 30.383,
+    "p95_ms": 30.318350000000002,
+    "p99_ms": 30.383,
+    "throughput_fps": 33.18154986373997
+  },
+  "events_generated": [
+    {
+      "event_id": "EVT_FIRE_1787769522835",
+      "timestamp": "2026-08-26T18:38:42Z",
+      "image_source": "fire",
+      "event_type": "PERSON_DETECTED",
+      "severity": "WARNING",
+      "class_name": "person",
+      "confidence": 0.85546875,
+      "bounding_box": [
+        327.0,
+        120.3,
+        495.2,
+        289.5
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_1787769522835",
+      "timestamp": "2026-08-26T18:38:42Z",
+      "image_source": "fire",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "WARNING",
+      "class_name": "smoke",
+      "confidence": 0.5,
+      "bounding_box": [
+        269.0,
+        350.9,
+        308.3,
+        378.9
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_1787769522835",
+      "timestamp": "2026-08-26T18:38:42Z",
+      "image_source": "fire",
+      "event_type": "PERSON_DETECTED",
+      "severity": "WARNING",
+      "class_name": "person",
+      "confidence": 0.5,
+      "bounding_box": [
+        201.7,
+        172.8,
+        337.4,
+        344.7
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_1787769522835",
+      "timestamp": "2026-08-26T18:38:42Z",
+      "image_source": "fire",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "WARNING",
+      "class_name": "smoke",
+      "confidence": 0.5,
+      "bounding_box": [
+        200.7,
+        175.3,
+        338.1,
+        344.2
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_2_1787769522875",
+      "timestamp": "2026-08-26T18:38:42Z",
+      "image_source": "fire_2",
+      "event_type": "PERSON_DETECTED",
+      "severity": "WARNING",
+      "class_name": "person",
+      "confidence": 0.5,
+      "bounding_box": [
+        196.1,
+        195.5,
+        353.3,
+        391.1
+      ]
+    },
+    {
+      "event_id": "EVT_PERSON_1787769522912",
+      "timestamp": "2026-08-26T18:38:42Z",
+      "image_source": "person",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "CRITICAL",
+      "class_name": "fire",
+      "confidence": 0.85546875,
+      "bounding_box": [
+        200.3,
+        234.2,
+        277.7,
+        468.5
+      ]
+    },
+    {
+      "event_id": "EVT_PERSON_1787769522912",
+      "timestamp": "2026-08-26T18:38:42Z",
+      "image_source": "person",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "CRITICAL",
+      "class_name": "fire",
+      "confidence": 0.79296875,
+      "bounding_box": [
+        296.2,
+        213.0,
+        359.6,
+        493.1
+      ]
+    }
+  ],
+  "overall_status": "PASS"
+}

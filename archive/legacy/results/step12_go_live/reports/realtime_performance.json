@@ -1,0 +1,14 @@
+{
+  "camera_type": "video_file_stream",
+  "duration_seconds": 8.51,
+  "captured_frames": 250,
+  "processed_frames": 104,
+  "dropped_frames": 0,
+  "htp_executions": 104,
+  "cpu_fallback_count": 0,
+  "effective_fps": 13.9,
+  "mean_latency_ms": 61.91,
+  "p95_latency_ms": 74.82,
+  "p99_latency_ms": 77.55,
+  "status": "PASS"
+}

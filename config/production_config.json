@@ -1,0 +1,97 @@
+{
+  "service_name": "kawach_worker",
+  "version": "1.0.0",
+  "environment": "production",
+  "hardware": {
+    "target_platform": "Radxa Dragon Q6490 / Qualcomm QCS6490",
+    "host_arch": "aarch64",
+    "dsp_core": "Qualcomm Hexagon v68 HTP",
+    "fastrpc_device": "/dev/fastrpc-cdsp"
+  },
+  "qnn_paths": {
+    "qairt_sdk_root": "/home/devuser/qairt/2.47.0.260601",
+    "backend_lib": "/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnHtp.so",
+    "system_lib": "/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnSystem.so",
+    "adsp_library_path": "/home/devuser/qairt/2.47.0.260601/lib/hexagon-v68/unsigned;/vendor/dsp/cdsp;/vendor/lib/rfsa/adsp;/dsp",
+    "ld_library_path": "/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4"
+  },
+  "model": {
+    "context_binary_path": "models/3class_calibrated_final.bin",
+    "expected_sha256": "b7868a8c436fcf723fea7f95b3dcfd6f131fbe8ddb02ddf103addbe351dafabc",
+    "graph_name": "graph_en1elpeg",
+    "input_contract": {
+      "name": "images",
+      "shape": [1, 3, 640, 640],
+      "layout": "NCHW",
+      "dtype": "QNN_DATATYPE_UFIXED_POINT_8",
+      "scale": 0.003921569,
+      "offset": 0,
+      "bytes": 1228800
+    },
+    "output_contracts": [
+      {
+        "name": "output_0",
+        "shape": [1, 64, 8400],
+        "dtype": "QNN_DATATYPE_UFIXED_POINT_8",
+        "scale": 0.1574602,
+        "offset": -191,
+        "bytes": 537600
+      },
+      {
+        "name": "output_1",
+        "shape": [1, 3, 8400],
+        "dtype": "QNN_DATATYPE_UFIXED_POINT_8",
+        "scale": 0.00390625,
+        "offset": 0,
+        "bytes": 25200
+      }
+    ]
+  },
+  "ipc": {
+    "socket_path": "/tmp/kawach_worker.sock",
+    "health_file": "/tmp/kawach_health.json",
+    "pid_file": "/tmp/kawach_worker.pid",
+    "log_file": "/tmp/kawach_worker.log",
+    "request_timeout_ms": 5000,
+    "max_payload_bytes": 1228800,
+    "backlog": 16
+  },
+  "postprocessing": {
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45,
+    "classes": ["fire", "smoke", "person"]
+  },
+  "alerting": {
+    "enabled": true,
+    "cooldown_sec": 3.0,
+    "duplicate_suppression": true,
+    "fire_severity": "CRITICAL",
+    "smoke_severity": "WARNING",
+    "person_severity": "WARNING",
+    "event_dispatch_threshold": 0.35
+  },
+  "lifecycle": {
+    "auto_restart": true,
+    "max_restart_attempts": 5,
+    "restart_delay_sec": 1.0,
+    "startup_self_check": true
+  },
+  "stream": {
+    "source_type": "video",
+    "source": "test_images/sample_stream.mp4",
+    "width": 1280,
+    "height": 720,
+    "capture_fps": 30.0,
+    "inference_fps": 30.0,
+    "queue_size": 2,
+    "frame_drop_policy": "latest_frame",
+    "reconnect_enabled": true,
+    "reconnect_backoff_sec": 1.0,
+    "max_reconnect_attempts": 10
+  },
+  "monitoring": {
+    "enabled": true,
+    "http_port": 8080,
+    "statistics_interval_sec": 2.0
+  }
+}

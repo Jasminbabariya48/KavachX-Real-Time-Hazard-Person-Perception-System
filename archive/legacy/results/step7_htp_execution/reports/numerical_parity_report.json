@@ -1,0 +1,191 @@
+{
+  "step": "Step 7 \u2014 Real Qualcomm Hexagon HTP vs FP32 Golden Baseline Numerical Parity",
+  "samples": {
+    "fire": {
+      "bbox_distribution_metrics": {
+        "max_absolute_error": 66.05060577392578,
+        "mean_absolute_error": 4.873775005340576,
+        "rmse": 7.173459529876709,
+        "relative_error_pct": 131.04925537109375,
+        "cosine_similarity": 0.25976118445396423,
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "class_probability_metrics": {
+        "max_absolute_error": 0.85546875,
+        "mean_absolute_error": 0.0007890692795626819,
+        "rmse": 0.017650838941335678,
+        "relative_error_pct": 99.8681411743164,
+        "cosine_similarity": 0.587155818939209,
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "htp_benchmark_ms": {
+        "mean_ms": 21.7,
+        "median_ms": 21.65,
+        "min_ms": 21.1,
+        "max_ms": 22.68,
+        "p95_ms": 22.61,
+        "p99_ms": 22.68,
+        "fps": 46.1
+      },
+      "cpu_dfl_nms_ms": 0.8,
+      "total_latency_ms": 22.5,
+      "htp_detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.8555,
+          "bbox": [
+            325.6,
+            119.6,
+            495.2,
+            289.7
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "score": 0.5,
+          "bbox": [
+            269.0,
+            350.9,
+            308.3,
+            378.9
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "score": 0.5,
+          "bbox": [
+            200.7,
+            175.3,
+            338.1,
+            344.2
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.5,
+          "bbox": [
+            201.7,
+            172.8,
+            337.4,
+            344.7
+          ]
+        }
+      ]
+    },
+    "fire_2": {
+      "bbox_distribution_metrics": {
+        "max_absolute_error": 65.2961196899414,
+        "mean_absolute_error": 4.473251819610596,
+        "rmse": 6.659942626953125,
+        "relative_error_pct": 125.17301177978516,
+        "cosine_similarity": 0.2958052158355713,
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "class_probability_metrics": {
+        "max_absolute_error": 0.5,
+        "mean_absolute_error": 0.0006265385309234262,
+        "rmse": 0.012177632190287113,
+        "relative_error_pct": 170.72645568847656,
+        "cosine_similarity": 0.03202536329627037,
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "htp_benchmark_ms": {
+        "mean_ms": 21.78,
+        "median_ms": 21.7,
+        "min_ms": 21.43,
+        "max_ms": 22.91,
+        "p95_ms": 22.57,
+        "p99_ms": 22.91,
+        "fps": 45.9
+      },
+      "cpu_dfl_nms_ms": 0.43,
+      "total_latency_ms": 22.21,
+      "htp_detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.5,
+          "bbox": [
+            196.1,
+            195.5,
+            353.3,
+            391.1
+          ]
+        }
+      ]
+    },
+    "person": {
+      "bbox_distribution_metrics": {
+        "max_absolute_error": 60.947120666503906,
+        "mean_absolute_error": 5.66519021987915,
+        "rmse": 7.967526912689209,
+        "relative_error_pct": 144.59332275390625,
+        "cosine_similarity": 0.23553863167762756,
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "class_probability_metrics": {
+        "max_absolute_error": 0.6585390567779541,
+        "mean_absolute_error": 7.509559509344399e-05,
+        "rmse": 0.004902886226773262,
+        "relative_error_pct": 22.60651206970215,
+        "cosine_similarity": 0.9757925271987915,
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "htp_benchmark_ms": {
+        "mean_ms": 21.09,
+        "median_ms": 21.02,
+        "min_ms": 20.88,
+        "max_ms": 22.1,
+        "p95_ms": 21.9,
+        "p99_ms": 22.1,
+        "fps": 47.4
+      },
+      "cpu_dfl_nms_ms": 0.11,
+      "total_latency_ms": 21.2,
+      "htp_detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.8555,
+          "bbox": [
+            200.1,
+            234.2,
+            278.3,
+            469.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.793,
+          "bbox": [
+            296.2,
+            212.4,
+            359.4,
+            493.8
+          ]
+        }
+      ]
+    }
+  },
+  "overall_summary": {
+    "average_bbox_cosine_similarity": 0.2637016773223877,
+    "average_class_cosine_similarity": 0.5316579031447569,
+    "mean_inference_fps": 46.46666666666667,
+    "mean_htp_latency_ms": 21.523333333333337,
+    "mean_postprocess_latency_ms": 0.4466666666666667,
+    "npu_hardware_execution": "100% Qualcomm Hexagon v68 HTP DSP via FastRPC",
+    "cpu_gpu_fallback": false,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,8 @@
+[qnn] Model binary loaded: 26800128 bytes
+[qnn] BinaryInfo version: 3
+[qnn] Found 1 graph(s) in binary
+[qnn] Graph[0]: name='graph_en1elpeg', inputs=1, outputs=2
+[qnn] Input[0] rank=4 dims=[1,3,640,640]
+[qnn] Output[0] rank=3 dims=[1,64,8400]
+[qnn] Graph retrieved: graph_en1elpeg
+[qnn] Tensors ready: 1 input(s), 2 output(s)

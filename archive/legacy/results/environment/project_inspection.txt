@@ -1,0 +1,35 @@
+total 32
+drwxrwxr-x 6 work_user2 work_user2 4096 Aug 26 15:49 .
+drwxr-x--- 6 work_user2 work_user2 4096 Aug 26 15:50 ..
+drwxrwxr-x 2 work_user2 work_user2 4096 Aug 26 14:21 models
+-rw-r--r-- 1 work_user2 work_user2 5371 Aug 26 14:22 NPU_DEPLOYMENT_TASK.md
+drwxrwxr-x 2 work_user2 work_user2 4096 Aug 26 15:46 npu_worker
+drwxrwxr-x 3 work_user2 work_user2 4096 Aug 26 15:49 results
+drwxrwxr-x 2 work_user2 work_user2 4096 Aug 26 14:22 test_images
+total 150M
+-rw-r--r-- 1 work_user2 work_user2 26M Aug 26 14:21 3class_calibrated_final.bin
+-rw-r--r-- 1 work_user2 work_user2 26M Aug 26 14:21 kawachx_aihub_split.bin
+-rw-r--r-- 1 work_user2 work_user2 99M Aug 26 14:21 new_3class_best_FP32.onnx
+total 144
+drwxrwxr-x 2 work_user2 work_user2  4096 Aug 26 15:46 .
+drwxrwxr-x 6 work_user2 work_user2  4096 Aug 26 15:49 ..
+-rw-r--r-- 1 work_user2 work_user2  3498 Aug 26 14:22 ipc_handler.cpp
+-rw-r--r-- 1 work_user2 work_user2  2972 Aug 26 14:22 ipc_handler.hpp
+-rw-rw-r-- 1 work_user2 work_user2  7536 Aug 26 15:46 ipc_handler.o
+-rwxrwxr-x 1 work_user2 work_user2 75560 Aug 26 15:46 kawach_worker
+-rw-r--r-- 1 work_user2 work_user2  8079 Aug 26 14:22 main.cpp
+-rw-rw-r-- 1 work_user2 work_user2 15424 Aug 26 15:46 main.o
+-rw-r--r-- 1 work_user2 work_user2   703 Aug 26 14:22 Makefile
+-rw-r--r-- 1 work_user2 work_user2 21843 Aug 26 14:22 qnn_inference.cpp
+-rw-r--r-- 1 work_user2 work_user2  4257 Aug 26 14:22 qnn_inference.hpp
+-rw-rw-r-- 1 work_user2 work_user2 19600 Aug 26 15:46 qnn_inference.o
+total 84K
+-rw-r--r-- 1 work_user2 work_user2 26K Aug 26 14:22 fire_2.jpg
+-rw-r--r-- 1 work_user2 work_user2 35K Aug 26 14:22 fire.jpg
+-rw-r--r-- 1 work_user2 work_user2 18K Aug 26 14:22 person.jpg
+/home/work_user2/kawachx_task/models/3class_calibrated_final.bin: Adobe Photoshop Color swatch, version 0, 2 colors; 1st RGB space (0), w 0x3, x 0, y 0, z 0; 2nd HSB space (1), w 0x1804, x 0, y 0, z 0
+/home/work_user2/kawachx_task/models/kawachx_aihub_split.bin:     Adobe Photoshop Color swatch, version 0, 2 colors; 1st RGB space (0), w 0x3, x 0, y 0, z 0; 2nd HSB space (1), w 0x1804, x 0, y 0, z 0
+/home/work_user2/kawachx_task/models/new_3class_best_FP32.onnx:   data
+/home/work_user2/kawachx_task/test_images/fire_2.jpg:             JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 679x452, components 3
+/home/work_user2/kawachx_task/test_images/fire.jpg:               JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 678x452, components 3
+/home/work_user2/kawachx_task/test_images/person.jpg:             JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 678x452, components 3

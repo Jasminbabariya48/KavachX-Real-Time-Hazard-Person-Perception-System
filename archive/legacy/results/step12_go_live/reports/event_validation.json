@@ -1,0 +1,81 @@
+{
+  "total_alerts_dispatched": 9,
+  "event_types_captured": [
+    "PERSON_DETECTED",
+    "HAZARD_DETECTED"
+  ],
+  "classes_detected": [
+    "smoke",
+    "person",
+    "fire"
+  ],
+  "debouncing_active": true,
+  "sample_events": [
+    {
+      "event_type": "PERSON_DETECTED",
+      "class_name": "person",
+      "severity": "WARNING",
+      "confidence": 0.289,
+      "bbox": [
+        664.6,
+        24.7,
+        985.9,
+        314.1
+      ],
+      "timestamp": "2026-08-27T15:48:52Z"
+    },
+    {
+      "event_type": "HAZARD_DETECTED",
+      "class_name": "fire",
+      "severity": "CRITICAL",
+      "confidence": 0.855,
+      "bbox": [
+        399.9,
+        216.2,
+        553.7,
+        614.2
+      ],
+      "timestamp": "2026-08-27T15:48:53Z"
+    },
+    {
+      "event_type": "HAZARD_DETECTED",
+      "class_name": "smoke",
+      "severity": "WARNING",
+      "confidence": 0.289,
+      "bbox": [
+        543.0,
+        412.0,
+        616.3,
+        454.7
+      ],
+      "timestamp": "2026-08-27T15:48:55Z"
+    },
+    {
+      "event_type": "PERSON_DETECTED",
+      "class_name": "person",
+      "severity": "WARNING",
+      "confidence": 0.391,
+      "bbox": [
+        664.6,
+        25.3,
+        985.9,
+        314.9
+      ],
+      "timestamp": "2026-08-27T15:48:55Z"
+    },
+    {
+      "event_type": "HAZARD_DETECTED",
+      "class_name": "fire",
+      "severity": "CRITICAL",
+      "confidence": 0.855,
+      "bbox": [
+        399.9,
+        215.7,
+        554.5,
+        614.2
+      ],
+      "timestamp": "2026-08-27T15:48:56Z"
+    }
+  ],
+  "status": "PASS"
+}

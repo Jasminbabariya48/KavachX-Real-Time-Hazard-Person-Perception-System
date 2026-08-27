@@ -1,0 +1,16 @@
+{
+  "test_10_2_1_short_stream": {
+    "mean": 65.24,
+    "p95": 72.21
+  },
+  "test_10_2_2_500_frames": {
+    "mean": 61.92,
+    "p95": 68.69
+  },
+  "test_10_2_3_sustained": {
+    "mean": 62.61,
+    "p95": 70.63
+  },
+  "post_processing_dfl_ms": "< 0.5 ms",
+  "ipc_roundtrip_ms": "< 1.5 ms"
+}

@@ -1,0 +1,3 @@
+images:=C:\Users\Jasmin Babariya\Downloads\KavachX\results\int8_calibration\preprocessed\fire_fp32.raw
+images:=C:\Users\Jasmin Babariya\Downloads\KavachX\results\int8_calibration\preprocessed\fire_2_fp32.raw
+images:=C:\Users\Jasmin Babariya\Downloads\KavachX\results\int8_calibration\preprocessed\person_fp32.raw

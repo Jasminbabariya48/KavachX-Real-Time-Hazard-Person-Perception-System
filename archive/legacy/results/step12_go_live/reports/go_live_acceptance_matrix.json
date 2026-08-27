@@ -1,0 +1,66 @@
+[
+  {
+    "item": "Preflight Audit",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Camera Access & Input Adapter",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Device Permission Audit",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Real Qualcomm Hexagon v68 HTP Execution",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Neural Network CPU Fallback = 0",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Real-Time Live Stream Inference",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Bounded Queue Latest-Frame Drop Protection",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Detection & Coordinate Un-letterbox Validation",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Hazard & Person Event Alert Pipeline",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Camera Disconnect / Reconnect Recovery",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Worker Restart Recovery",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Go-Live Failure Testing Matrix",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Sustained Stream Stability",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Memory Stability (Zero Leak Trend)",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Security & Sanitized Logging Audit",
+    "verdict": "PASS"
+  },
+  {
+    "item": "Production Service Lifecycle",
+    "verdict": "PASS"
+  }
+]

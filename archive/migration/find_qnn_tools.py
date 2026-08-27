@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import subprocess
+
+def run_remote(cmd):
+    res = subprocess.run(['ssh', '-n', '-o', 'ControlMaster=no', 'work_user2@ssh.kavachx.io', cmd], capture_output=True, text=True)
+    print("STDOUT:\n", res.stdout)
+    if res.stderr:
+        print("STDERR:\n", res.stderr)
+    return res
+
+run_remote('find /home/devuser/qairt/2.47.0.260601/ -name "*context-binary-generator*" -o -name "*qnn-model-lib-generator*"')
+run_remote('find /home/devuser/qairt/2.47.0.260601/bin -type d')
+run_remote('find /home/devuser/qairt/2.47.0.260601/bin -name "*qnn*"')

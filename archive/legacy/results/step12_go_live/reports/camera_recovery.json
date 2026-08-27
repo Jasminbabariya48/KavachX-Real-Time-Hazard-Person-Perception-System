@@ -1,0 +1,8 @@
+{
+  "source_type": "rtsp_auto_reconnect",
+  "disconnect_detected": true,
+  "reconnect_attempted": true,
+  "reconnect_count": 1,
+  "worker_unaffected": true,
+  "status": "PASS"
+}

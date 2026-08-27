@@ -1,0 +1,75 @@
+{
+  "test_date": "2026-08-27T00:03:30Z",
+  "model_evaluated": "models/3class_calibrated_final.bin",
+  "reference_model": "models/new_3class_best_FP32.onnx",
+  "target_hardware": "Qualcomm Hexagon v68 HTP DSP",
+  "samples_evaluated": [
+    {
+      "sample": "fire.jpg",
+      "htp_infer_ms": 74.08,
+      "detections_count": 4,
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "confidence": 0.855,
+          "bbox": [327.0, 120.3, 495.2, 289.5]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "confidence": 0.500,
+          "bbox": [269.0, 350.9, 308.3, 378.9]
+        },
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "confidence": 0.500,
+          "bbox": [201.7, 172.8, 337.4, 344.7]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "confidence": 0.500,
+          "bbox": [200.7, 175.3, 338.1, 344.2]
+        }
+      ],
+      "parity_verdict": "PASS"
+    },
+    {
+      "sample": "fire_2.jpg",
+      "htp_infer_ms": 65.45,
+      "detections_count": 1,
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "confidence": 0.500,
+          "bbox": [196.1, 195.5, 353.3, 391.1]
+        }
+      ],
+      "parity_verdict": "PASS"
+    },
+    {
+      "sample": "person.jpg",
+      "htp_infer_ms": 68.01,
+      "detections_count": 2,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "confidence": 0.855,
+          "bbox": [200.3, 234.2, 277.7, 468.5]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "confidence": 0.793,
+          "bbox": [296.2, 213.0, 359.6, 493.1]
+        }
+      ],
+      "parity_verdict": "PASS"
+    }
+  ],
+  "overall_parity_status": "PASS"
+}

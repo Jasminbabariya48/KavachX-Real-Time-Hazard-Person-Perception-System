@@ -1,0 +1,159 @@
+{
+  "model_file": "/home/work_user2/kawachx_task/models/new_3class_best_FP32.onnx",
+  "input_tensor": {
+    "name": "images",
+    "shape": [
+      1,
+      3,
+      640,
+      640
+    ]
+  },
+  "original_output": {
+    "name": "output0",
+    "shape": [
+      1,
+      7,
+      8400
+    ]
+  },
+  "box_regression_tensor": {
+    "tensor_name": "/model.22/Concat_output_0",
+    "source_node": "/model.22/Concat",
+    "shape": [
+      1,
+      64,
+      8400
+    ],
+    "description": "Concatenated multi-scale bounding box regression distributions (64 channels = 16 bins * 4 coordinates)."
+  },
+  "class_score_tensor": {
+    "tensor_name": "/model.22/Sigmoid_output_0",
+    "source_node": "/model.22/Sigmoid",
+    "shape": [
+      1,
+      3,
+      8400
+    ],
+    "description": "Sigmoid-activated class probabilities across all 8400 anchor positions for 3 classes."
+  },
+  "incompatible_dfl_slice_nodes": [
+    {
+      "node_name": "/model.22/dfl/Reshape",
+      "op_type": "Reshape",
+      "inputs": [
+        "/model.22/Concat_output_0",
+        "/model.22/dfl/Constant_output_0"
+      ],
+      "outputs": [
+        "/model.22/dfl/Reshape_output_0"
+      ],
+      "attributes": {
+        "allowzero": "0"
+      },
+      "reason_for_incompatibility": "Distribution Focal Loss (DFL) decode layer consists of Softmax over 16 bins and Conv/Slice layers that execute much more efficiently on CPU/SIMD in post-processing than on NPU vector pipelines.",
+      "proposed_handling": "Move to C++ worker post-processing."
+    },
+    {
+      "node_name": "/model.22/dfl/Transpose",
+      "op_type": "Transpose",
+      "inputs": [
+        "/model.22/dfl/Reshape_output_0"
+      ],
+      "outputs": [
+        "/model.22/dfl/Transpose_output_0"
+      ],
+      "attributes": {
+        "perm": "[0, 2, 1, 3]"
+      },
+      "reason_for_incompatibility": "Distribution Focal Loss (DFL) decode layer consists of Softmax over 16 bins and Conv/Slice layers that execute much more efficiently on CPU/SIMD in post-processing than on NPU vector pipelines.",
+      "proposed_handling": "Move to C++ worker post-processing."
+    },
+    {
+      "node_name": "/model.22/dfl/Softmax",
+      "op_type": "Softmax",
+      "inputs": [
+        "/model.22/dfl/Transpose_output_0"
+      ],
+      "outputs": [
+        "/model.22/dfl/Softmax_output_0"
+      ],
+      "attributes": {
+        "axis": "1"
+      },
+      "reason_for_incompatibility": "Distribution Focal Loss (DFL) decode layer consists of Softmax over 16 bins and Conv/Slice layers that execute much more efficiently on CPU/SIMD in post-processing than on NPU vector pipelines.",
+      "proposed_handling": "Move to C++ worker post-processing."
+    },
+    {
+      "node_name": "/model.22/dfl/conv/Conv",
+      "op_type": "Conv",
+      "inputs": [
+        "/model.22/dfl/Softmax_output_0",
+        "model.22.dfl.conv.weight"
+      ],
+      "outputs": [
+        "/model.22/dfl/conv/Conv_output_0"
+      ],
+      "attributes": {
+        "dilations": "[1, 1]",
+        "group": "1",
+        "kernel_shape": "[1, 1]",
+        "pads": "[0, 0, 0, 0]",
+        "strides": "[1, 1]"
+      },
+      "reason_for_incompatibility": "Distribution Focal Loss (DFL) decode layer consists of Softmax over 16 bins and Conv/Slice layers that execute much more efficiently on CPU/SIMD in post-processing than on NPU vector pipelines.",
+      "proposed_handling": "Move to C++ worker post-processing."
+    },
+    {
+      "node_name": "/model.22/dfl/Reshape_1",
+      "op_type": "Reshape",
+      "inputs": [
+        "/model.22/dfl/conv/Conv_output_0",
+        "/model.22/dfl/Constant_1_output_0"
+      ],
+      "outputs": [
+        "/model.22/dfl/Reshape_1_output_0"
+      ],
+      "attributes": {
+        "allowzero": "0"
+      },
+      "reason_for_incompatibility": "Distribution Focal Loss (DFL) decode layer consists of Softmax over 16 bins and Conv/Slice layers that execute much more efficiently on CPU/SIMD in post-processing than on NPU vector pipelines.",
+      "proposed_handling": "Move to C++ worker post-processing."
+    },
+    {
+      "node_name": "/model.22/Slice",
+      "op_type": "Slice",
+      "inputs": [
+        "/model.22/dfl/Reshape_1_output_0",
+        "/model.22/Constant_26_output_0",
+        "/model.22/Mul_output_0",
+        "/model.22/Constant_25_output_0"
+      ],
+      "outputs": [
+        "/model.22/Slice_output_0"
+      ],
+      "attributes": {},
+      "reason_for_incompatibility": "Dynamic slice start/end indices computed at runtime from tensor multiplications are not statically determinable by Qualcomm Hexagon v68 HTP compiler in INT8 mode.",
+      "proposed_handling": "Exclude DFL sub-graph from NPU graph; expose raw bounding box distribution [1, 64, 8400] and class probabilities [1, 3, 8400] directly as model outputs. Perform DFL decoding in C++ worker."
+    },
+    {
+      "node_name": "/model.22/Slice_1",
+      "op_type": "Slice",
+      "inputs": [
+        "/model.22/dfl/Reshape_1_output_0",
+        "/model.22/Mul_output_0",
+        "/model.22/Mul_1_output_0",
+        "/model.22/Constant_25_output_0"
+      ],
+      "outputs": [
+        "/model.22/Slice_1_output_0"
+      ],
+      "attributes": {},
+      "reason_for_incompatibility": "Dynamic slice start/end indices computed at runtime from tensor multiplications are not statically determinable by Qualcomm Hexagon v68 HTP compiler in INT8 mode.",
+      "proposed_handling": "Exclude DFL sub-graph from NPU graph; expose raw bounding box distribution [1, 64, 8400] and class probabilities [1, 3, 8400] directly as model outputs. Perform DFL decoding in C++ worker."
+    }
+  ],
+  "total_head_nodes": 66,
+  "total_incompatible_nodes": 7,
+  "proposed_split_strategy": "Expose /model.22/Concat_output_0 ([1,64,8400]) and /model.22/Sigmoid_output_0 ([1,3,8400]) as top-level graph outputs. Remove downstream DFL decoding nodes (/model.22/dfl/*, /model.22/Slice*, /model.22/Sub*, /model.22/Add*, /model.22/Div*, /model.22/Concat_6, /model.22/Mul_2, /model.22/Concat_7)."
+}

@@ -1,0 +1,68 @@
+total 394440
+drwxr-x---  2 devuser qairt-users     4096 Jun  1 14:22 .
+drwxr-x--- 22 devuser qairt-users     4096 Jun  1 14:22 ..
+-rwxr-x---  1 devuser qairt-users    10160 Jun  1 14:22 libcalculator.so
+-rwxr-x---  1 devuser qairt-users  2125008 Jun  1 14:22 libhta_hexagon_runtime_qnn.so
+-rwxr-x---  1 devuser qairt-users  2125008 Jun  1 14:22 libhta_hexagon_runtime_snpe.so
+-rwxr-x---  1 devuser qairt-users 20016848 Jun  1 14:22 libPlatformValidatorShared.so
+-rwxr-x---  1 devuser qairt-users   239552 Jun  1 14:22 libQairtCpuBackendExtensions.so
+-rwxr-x---  1 devuser qairt-users 10229072 Jun  1 14:22 libQairtCpu.so
+-rwxr-x---  1 devuser qairt-users   255928 Jun  1 14:22 libQairtDspBackendExtensions.so
+-rwxr-x---  1 devuser qairt-users  3864312 Jun  1 14:22 libQairtDsp.so
+-rwxr-x---  1 devuser qairt-users    42936 Jun  1 14:22 libQairtDspV66Stub.so
+-rwxr-x---  1 devuser qairt-users   251832 Jun  1 14:22 libQairtGpuBackendExtensions.so
+-rwxr-x---  1 devuser qairt-users 10431776 Jun  1 14:22 libQairtGpu.so
+-rwxr-x---  1 devuser qairt-users   796640 Jun  1 14:22 libQairtHtpBackendExtensions.so
+-rwxr-x---  1 devuser qairt-users 88635288 Jun  1 14:22 libQairtHtpPrepare.so
+-rwxr-x---  1 devuser qairt-users  4635816 Jun  1 14:22 libQairtHtp.so
+-rwxr-x---  1 devuser qairt-users   436168 Jun  1 14:22 libQairtHtpV68Stub.so
+-rwxr-x---  1 devuser qairt-users  7523568 Jun  1 14:22 libQairtSystem.so
+-rwxr-x---  1 devuser qairt-users   231384 Jun  1 14:22 libQnnChrometraceProfilingReader.so
+-rwxr-x---  1 devuser qairt-users   239552 Jun  1 14:22 libQnnCpuNetRunExtensions.so
+-rwxr-x---  1 devuser qairt-users  7652552 Jun  1 14:22 libQnnCpu.so
+-rwxr-x---  1 devuser qairt-users   255928 Jun  1 14:22 libQnnDspNetRunExtensions.so
+-rwxr-x---  1 devuser qairt-users  1296088 Jun  1 14:22 libQnnDsp.so
+-rwxr-x---  1 devuser qairt-users    10160 Jun  1 14:22 libQnnDspV66CalculatorStub.so
+-rwxr-x---  1 devuser qairt-users    42936 Jun  1 14:22 libQnnDspV66Stub.so
+-rwxr-x---  1 devuser qairt-users   251832 Jun  1 14:22 libQnnGpuNetRunExtensions.so
+-rwxr-x---  1 devuser qairt-users   239576 Jun  1 14:22 libQnnGpuProfilingReader.so
+-rwxr-x---  1 devuser qairt-users  7855344 Jun  1 14:22 libQnnGpu.so
+-rwxr-x---  1 devuser qairt-users   235448 Jun  1 14:22 libQnnHtaNetRunExtensions.so
+-rwxr-x---  1 devuser qairt-users   822440 Jun  1 14:22 libQnnHta.so
+-rwxr-x---  1 devuser qairt-users   792544 Jun  1 14:22 libQnnHtpNetRunExtensions.so
+-rwxr-x---  1 devuser qairt-users  5504680 Jun  1 14:22 libQnnHtpOptraceProfilingReader.so
+-rwxr-x---  1 devuser qairt-users 88635288 Jun  1 14:22 libQnnHtpPrepare.so
+-rwxr-x---  1 devuser qairt-users   223192 Jun  1 14:22 libQnnHtpProfilingReader.so
+-rwxr-x---  1 devuser qairt-users  4029608 Jun  1 14:22 libQnnHtp.so
+-rwxr-x---  1 devuser qairt-users    10160 Jun  1 14:22 libQnnHtpV68CalculatorStub.so
+-rwxr-x---  1 devuser qairt-users   436168 Jun  1 14:22 libQnnHtpV68Stub.so
+-rwxr-x---  1 devuser qairt-users  3164792 Jun  1 14:22 libQnnIr.so
+-rwxr-x---  1 devuser qairt-users   272344 Jun  1 14:22 libQnnJsonProfilingReader.so
+-rwxr-x---  1 devuser qairt-users  5036664 Jun  1 14:22 libQnnModelDlc.so
+-rwxr-x---  1 devuser qairt-users   481224 Jun  1 14:22 libQnnSaver.so
+-rwxr-x---  1 devuser qairt-users  5229800 Jun  1 14:22 libQnnSystem.so
+-rwxr-x---  1 devuser qairt-users   988176 Jun  1 14:22 libQnnTFLiteDelegate.so
+-rwxr-x---  1 devuser qairt-users  1345240 Jun  1 14:22 libSnpeDspV66Stub.so
+-rwxr-x---  1 devuser qairt-users   822440 Jun  1 14:22 libSnpeHta.so
+-rwxr-x---  1 devuser qairt-users 88635288 Jun  1 14:22 libSnpeHtpPrepare.so
+-rwxr-x---  1 devuser qairt-users    10160 Jun  1 14:22 libSnpeHtpV68CalculatorStub.so
+-rwxr-x---  1 devuser qairt-users   436168 Jun  1 14:22 libSnpeHtpV68Stub.so
+-rwxr-x---  1 devuser qairt-users 26995576 Jun  1 14:22 libSNPE.so
+total 53512
+drwxr-x--- 2 devuser qairt-users     4096 Jun  1 14:22 .
+drwxr-x--- 3 devuser qairt-users     4096 Jun  1 14:22 ..
+-rwxr-x--- 1 devuser qairt-users     5656 Jun  1 14:22 libCalculator_skel.so
+-rwxr-x--- 1 devuser qairt-users 10026516 Jun  1 14:22 libQairtHtpV68Skel.so
+-rwxr-x--- 1 devuser qairt-users    30996 Jun  1 14:22 libQnnHexagonSkel_dspApp.so
+-rwxr-x--- 1 devuser qairt-users   761944 Jun  1 14:22 libQnnHtpNetRunExtensions.so
+-rwxr-x--- 1 devuser qairt-users 10030672 Jun  1 14:22 libQnnHtpV68QemuDriver.so
+-rwxr-x--- 1 devuser qairt-users 10026512 Jun  1 14:22 libQnnHtpV68Skel.so
+-rwxr-x--- 1 devuser qairt-users 10392516 Jun  1 14:22 libQnnHtpV68.so
+-rwxr-x--- 1 devuser qairt-users  2515300 Jun  1 14:22 libQnnNetRunDirectV68Skel.so
+-rwxr-x--- 1 devuser qairt-users   322544 Jun  1 14:22 libQnnSaver.so
+-rwxr-x--- 1 devuser qairt-users   212428 Jun  1 14:22 libQnnSystem.so
+-rwxr-x--- 1 devuser qairt-users 10443152 Jun  1 14:22 libSnpeHtpV68Skel.so
+/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnHtp.so:        ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=59dca9624c509a7db0ee55029a667b93a17031aa, stripped
+/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnHtpV68Stub.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=0fc8b455359fbc26baec1bf462db46d02b1b36bc, stripped
+/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnSystem.so:     ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=58a35b6090de50b1ceb16d152b3aecdefbad84f9, stripped
+/home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnCpu.so:        ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=48d8f26b14f23b84582a0d7381131e7db2206c17, stripped

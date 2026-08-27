@@ -1,0 +1,422 @@
+[
+  {
+    "original_path": "scripts/tools/execute_step10_1_on_target.py",
+    "archived_path": "archive/migration/execute_step10_1_on_target.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/execute_step10_2_on_target.py",
+    "archived_path": "archive/migration/execute_step10_2_on_target.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/execute_step10_on_target.py",
+    "archived_path": "archive/migration/execute_step10_on_target.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/execute_step11_on_target.py",
+    "archived_path": "archive/migration/execute_step11_on_target.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/execute_step8_on_target.py",
+    "archived_path": "archive/migration/execute_step8_on_target.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/execute_step9_on_target.py",
+    "archived_path": "archive/migration/execute_step9_on_target.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/generate_step11_audit_and_package.py",
+    "archived_path": "archive/migration/generate_step11_audit_and_package.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/generate_step4_report.py",
+    "archived_path": "archive/migration/generate_step4_report.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_step7_model.cpp",
+    "archived_path": "archive/migration/inspect_step7_model.cpp",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step10_1_harness_test.py",
+    "archived_path": "archive/migration/run_step10_1_harness_test.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step10_live_stream_suite.py",
+    "archived_path": "archive/migration/run_step10_live_stream_suite.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step7_full_pipeline.py",
+    "archived_path": "archive/migration/run_step7_full_pipeline.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step7_full_validation.py",
+    "archived_path": "archive/migration/run_step7_full_validation.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step7_init.py",
+    "archived_path": "archive/migration/run_step7_init.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step7_worker_ipc_test.py",
+    "archived_path": "archive/migration/run_step7_worker_ipc_test.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step8_comprehensive_validation.py",
+    "archived_path": "archive/migration/run_step8_comprehensive_validation.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/run_step9_acceptance_suite.py",
+    "archived_path": "archive/migration/run_step9_acceptance_suite.py",
+    "reason": "Historical step-oriented automation script"
+  },
+  {
+    "original_path": "scripts/tools/analyze_dfl_graph.py",
+    "archived_path": "archive/migration/analyze_dfl_graph.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/build_model_so_native.py",
+    "archived_path": "archive/migration/build_model_so_native.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/check_deployment_readiness.py",
+    "archived_path": "archive/migration/check_deployment_readiness.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/check_model_lib_gen.py",
+    "archived_path": "archive/migration/check_model_lib_gen.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/check_onnx_env.py",
+    "archived_path": "archive/migration/check_onnx_env.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/check_onnx_version.py",
+    "archived_path": "archive/migration/check_onnx_version.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/check_qnn_deps.py",
+    "archived_path": "archive/migration/check_qnn_deps.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/check_skel_paths.py",
+    "archived_path": "archive/migration/check_skel_paths.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/check_step1_status.py",
+    "archived_path": "archive/migration/check_step1_status.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/compare_fp32_vs_htp.py",
+    "archived_path": "archive/migration/compare_fp32_vs_htp.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/create_htp_split_model.py",
+    "archived_path": "archive/migration/create_htp_split_model.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/debug_context_gen.py",
+    "archived_path": "archive/migration/debug_context_gen.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/execute_htp_inference.cpp",
+    "archived_path": "archive/migration/execute_htp_inference.cpp",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/experiment_1_pyramid_heads.py",
+    "archived_path": "archive/experiments/experiment_1_pyramid_heads.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/find_qnn_tools.py",
+    "archived_path": "archive/migration/find_qnn_tools.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/fix_yolov8_dfl_slice.py",
+    "archived_path": "archive/migration/fix_yolov8_dfl_slice.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/gather_phase1_evidence.py",
+    "archived_path": "archive/migration/gather_phase1_evidence.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/generate_htp_binary.cpp",
+    "archived_path": "archive/migration/generate_htp_binary.cpp",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/generate_phase8_1_manifest.py",
+    "archived_path": "archive/migration/generate_phase8_1_manifest.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_converted_qnn.py",
+    "archived_path": "archive/migration/inspect_converted_qnn.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_generator_help.py",
+    "archived_path": "archive/migration/inspect_generator_help.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_onnx_nodes.py",
+    "archived_path": "archive/migration/inspect_onnx_nodes.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_onnx_tail.py",
+    "archived_path": "archive/migration/inspect_onnx_tail.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_phase2.py",
+    "archived_path": "archive/migration/inspect_phase2.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_qnn_details.py",
+    "archived_path": "archive/migration/inspect_qnn_details.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_raw_htp_outputs.py",
+    "archived_path": "archive/migration/inspect_raw_htp_outputs.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/inspect_remote_onnx.py",
+    "archived_path": "archive/migration/inspect_remote_onnx.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/install_compat_onnx.py",
+    "archived_path": "archive/migration/install_compat_onnx.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/install_converter_deps.py",
+    "archived_path": "archive/migration/install_converter_deps.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/prepare_int8_calibration.py",
+    "archived_path": "archive/migration/prepare_int8_calibration.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/prepare_step7_inputs.py",
+    "archived_path": "archive/migration/prepare_step7_inputs.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/print_quant_encodings.cpp",
+    "archived_path": "archive/migration/print_quant_encodings.cpp",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/restructure_repository.py",
+    "archived_path": "archive/migration/restructure_repository.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_full_assignment.py",
+    "archived_path": "archive/migration/run_full_assignment.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_htp_compilation.py",
+    "archived_path": "archive/migration/run_htp_compilation.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_htp_context_generator.py",
+    "archived_path": "archive/migration/run_htp_context_generator.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_htp_direct.py",
+    "archived_path": "archive/migration/run_htp_direct.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_native_generator.py",
+    "archived_path": "archive/migration/run_native_generator.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_print_quant.py",
+    "archived_path": "archive/migration/run_print_quant.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_qnn_conversion.py",
+    "archived_path": "archive/migration/run_qnn_conversion.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_remote.py",
+    "archived_path": "archive/migration/run_remote.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_split_htp_compilation.py",
+    "archived_path": "archive/migration/run_split_htp_compilation.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_split_qnn_conversion.py",
+    "archived_path": "archive/migration/run_split_qnn_conversion.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/run_stage2_context_gen.py",
+    "archived_path": "archive/migration/run_stage2_context_gen.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/save_admin_fix_evidence.py",
+    "archived_path": "archive/migration/save_admin_fix_evidence.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/save_step5_report.py",
+    "archived_path": "archive/migration/save_step5_report.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/sync_and_validate_restructure.py",
+    "archived_path": "archive/migration/sync_and_validate_restructure.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_aarch64_generator.py",
+    "archived_path": "archive/experiments/test_aarch64_generator.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_adsp_env.py",
+    "archived_path": "archive/experiments/test_adsp_env.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_all_generators.py",
+    "archived_path": "archive/experiments/test_all_generators.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_backend_bin.py",
+    "archived_path": "archive/experiments/test_backend_bin.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_converter_help.py",
+    "archived_path": "archive/experiments/test_converter_help.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_default_output.py",
+    "archived_path": "archive/experiments/test_default_output.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_float_fallback.py",
+    "archived_path": "archive/experiments/test_float_fallback.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_genie_config.py",
+    "archived_path": "archive/experiments/test_genie_config.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_htp_config.py",
+    "archived_path": "archive/experiments/test_htp_config.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_htp_prepare.py",
+    "archived_path": "archive/experiments/test_htp_prepare.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_htp_socs.py",
+    "archived_path": "archive/experiments/test_htp_socs.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_onnxsim_conversion.py",
+    "archived_path": "archive/experiments/test_onnxsim_conversion.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_simple_model.py",
+    "archived_path": "archive/experiments/test_simple_model.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_ulimit.py",
+    "archived_path": "archive/experiments/test_ulimit.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_worker_init.py",
+    "archived_path": "archive/experiments/test_worker_init.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/test_worker_ipc.py",
+    "archived_path": "archive/experiments/test_worker_ipc.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/validate_split_model_cpu.py",
+    "archived_path": "archive/migration/validate_split_model_cpu.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/validate_with_ort.py",
+    "archived_path": "archive/migration/validate_with_ort.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/verify_step2_after_admin.py",
+    "archived_path": "archive/migration/verify_step2_after_admin.py",
+    "reason": "Historical milestone development script"
+  },
+  {
+    "original_path": "scripts/tools/verify_step2_htp.py",
+    "archived_path": "archive/migration/verify_step2_htp.py",
+    "reason": "Historical milestone development script"
+  }
+]

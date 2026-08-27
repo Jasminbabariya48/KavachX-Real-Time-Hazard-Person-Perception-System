@@ -1,0 +1,44 @@
+[
+  {
+    "step": "Step 6",
+    "test": "YOLOv8 DFL / Dynamic Slice HTP Compatibility Split",
+    "status": "PASS",
+    "evidence": "Split FP32 graph generated and verified against baseline (Cosine Sim > 0.9999)",
+    "report_path": "results/htp_compilation_split/reports/step6_report.json"
+  },
+  {
+    "step": "Step 7",
+    "test": "Real Qualcomm Hexagon v68 HTP Hardware Graph Execution",
+    "status": "PASS",
+    "evidence": "libQnnHtp.so loaded, FastRPC active, 21.52 ms HTP latency, 0 CPU fallback",
+    "report_path": "results/step7_htp_execution/reports/step7_report.json"
+  },
+  {
+    "step": "Step 8",
+    "test": "Production System Integration & End-to-End Benchmark",
+    "status": "PASS",
+    "evidence": "Framed IPC (0x4B574158), 500/500 stability OK, 8-client concurrency OK (28.6 FPS)",
+    "report_path": "results/step8_integration/reports/step8_report.json"
+  },
+  {
+    "step": "Step 9",
+    "test": "Production Deployment, Service Lifecycle & Fault Injection",
+    "status": "PASS",
+    "evidence": "14/14 Failure Injection Matrix PASS, pre-flight check PASS, /tmp/kawach_health.json active",
+    "report_path": "results/step9_production/reports/step9_report.json"
+  },
+  {
+    "step": "Step 10.1",
+    "test": "Deterministic Test Harness, Watchdogs & Process Isolation",
+    "status": "PASS",
+    "evidence": "Process isolation auditor PASS, 5s/30-frame bounded smoke test PASS, auto-termination PASS",
+    "report_path": "results/step10_test_harness/smoke_test_report.json"
+  },
+  {
+    "step": "Step 10.2",
+    "test": "Full Bounded Live-Stream Acceptance Suite",
+    "status": "PASS",
+    "evidence": "10/10 Live-Stream Acceptance Matrix PASS, multi-client, backpressure, debounced alerts PASS",
+    "report_path": "results/step10_live_stream/reports/step10_2_report.json"
+  }
+]

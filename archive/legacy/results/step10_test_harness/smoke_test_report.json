@@ -1,0 +1,71 @@
+{
+  "test_name": "Smoke_Test_5s_30Frames",
+  "verdict": "PASS",
+  "termination_reason": "QUEUE_DRAINED",
+  "duration_seconds": 1.26,
+  "captured_frames": 30,
+  "processed_frames": 14,
+  "dropped_frames": 16,
+  "htp_inferences": 14,
+  "cpu_fallback_count": 0,
+  "average_fps": 11.2,
+  "mean_htp_latency_ms": 65.88,
+  "p95_htp_latency_ms": 71.53,
+  "mean_e2e_latency_ms": 125.61,
+  "p95_e2e_latency_ms": 151.38,
+  "memory_before_mb": 51.7,
+  "memory_after_mb": 105.2,
+  "worker_survived": true,
+  "recent_detections": [
+    {
+      "class_name": "smoke",
+      "score": 0.289,
+      "bbox": [
+        542.5,
+        412.0,
+        617.0,
+        455.5
+      ]
+    },
+    {
+      "class_name": "smoke",
+      "score": 0.289,
+      "bbox": [
+        543.0,
+        412.4,
+        616.1,
+        456.8
+      ]
+    },
+    {
+      "class_name": "smoke",
+      "score": 0.289,
+      "bbox": [
+        543.5,
+        412.8,
+        616.0,
+        455.5
+      ]
+    },
+    {
+      "class_name": "smoke",
+      "score": 0.289,
+      "bbox": [
+        543.7,
+        412.4,
+        615.6,
+        454.5
+      ]
+    },
+    {
+      "class_name": "smoke",
+      "score": 0.391,
+      "bbox": [
+        542.7,
+        412.4,
+        615.5,
+        454.0
+      ]
+    }
+  ]
+}

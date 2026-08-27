@@ -1,0 +1,14 @@
+{
+  "backend_extensions": {
+    "shared_library_path": "libQnnHtpV68Stub.so",
+    "config_file_path": ""
+  },
+  "htp_options": {
+    "soc_model": "QCS6490",
+    "target_arch": "v68",
+    "performance_mode": "burst",
+    "profiling_level": "basic",
+    "precision": "quantized",
+    "use_mmap": true
+  }
+}

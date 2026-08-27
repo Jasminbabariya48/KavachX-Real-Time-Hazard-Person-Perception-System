@@ -1,0 +1,23 @@
+{
+  "image": "/home/work_user2/kawachx_task/results/step7_htp_execution/inputs/fire_uint8.raw",
+  "model": "/home/work_user2/kawachx_task/models/3class_calibrated_final.bin",
+  "htp_execution_status": "PASS",
+  "benchmark_100_runs": {
+    "mean_ms": 21.70,
+    "median_ms": 21.65,
+    "min_ms": 21.10,
+    "max_ms": 22.68,
+    "p95_ms": 22.61,
+    "p99_ms": 22.68,
+    "fps": 46.1
+  },
+  "cpu_dfl_nms_ms": 0.80,
+  "total_end_to_end_ms": 22.50,
+  "detections_count": 4,
+  "detections": [
+    {"class_id": 2, "class_name": "person", "score": 0.8555, "bbox": [325.6, 119.6, 495.2, 289.7]},
+    {"class_id": 1, "class_name": "smoke", "score": 0.5000, "bbox": [269.0, 350.9, 308.3, 378.9]},
+    {"class_id": 1, "class_name": "smoke", "score": 0.5000, "bbox": [200.7, 175.3, 338.1, 344.2]},
+    {"class_id": 2, "class_name": "person", "score": 0.5000, "bbox": [201.7, 172.8, 337.4, 344.7]}
+  ]
+}

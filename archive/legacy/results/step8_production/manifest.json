@@ -1,0 +1,93 @@
+{
+  "production_release": "KavachX NPU v1.0 Production",
+  "target_hardware": {
+    "board": "Radxa Dragon Q6490 / Qualcomm QCS6490",
+    "arch": "aarch64",
+    "npu_dsp": "Qualcomm Hexagon v68 HTP",
+    "qairt_sdk_version": "2.47.0.260601",
+    "fastrpc_device": "/dev/fastrpc-cdsp (GID 993 render, 0660)"
+  },
+  "frozen_models": {
+    "models/3class_calibrated_final.bin": {
+      "remote_path": "/home/work_user2/kawachx_task/models/3class_calibrated_final.bin",
+      "sha256": "b7868a8c436fcf723fea7f95b3dcfd6f131fbe8ddb02ddf103addbe351dafabc",
+      "size_bytes": 26800128
+    },
+    "models/kawachx_aihub_split.bin": {
+      "remote_path": "/home/work_user2/kawachx_task/models/kawachx_aihub_split.bin",
+      "sha256": "42262ba02f418c6b5efd1c4937a51fe3b901d0fbe2c331b2e39bf5a529f3f9b0",
+      "size_bytes": 26861568
+    },
+    "models/new_3class_best_FP32_htp_split.onnx": {
+      "remote_path": "/home/work_user2/kawachx_task/models/new_3class_best_FP32_htp_split.onnx",
+      "sha256": "62e7b54658ce06fbd7a23e6f033ef90865ad49e88222116aba0e04e32c4990c8",
+      "size_bytes": 103421300
+    },
+    "models/new_3class_best_FP32.onnx": {
+      "remote_path": "/home/work_user2/kawachx_task/models/new_3class_best_FP32.onnx",
+      "sha256": "58a5d59d8e35259e1c822d1070fcab32a54c7cebbbaf1b067d5e09772a0a0077",
+      "size_bytes": 103562434
+    },
+    "results/qnn_int8_split_conversion/generated/model_split_qnn_int8.bin": {
+      "remote_path": "/home/work_user2/kawachx_task/results/qnn_int8_split_conversion/generated/model_split_qnn_int8.bin",
+      "sha256": "5c1dd1cc32fb03de6dc1db78b37e9aa3842c09d3184ee9609ddc49e9d3c49b62",
+      "size_bytes": 26009600
+    },
+    "src/npu_worker/kawach_worker": {
+      "remote_path": "/home/work_user2/kawachx_task/npu_worker/kawach_worker",
+      "sha256": "03e9fe3a0346e1f6c757f1ced949ad9023a1dad18d06aec1632a5becf959c2bb",
+      "size_bytes": 75960
+    }
+  },
+  "input_contract": {
+    "name": "images",
+    "shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "layout": "NCHW",
+    "dtype": "QNN_DATATYPE_UFIXED_POINT_8 (uint8)",
+    "quantization": {
+      "scale": 0.003921569,
+      "offset": 0
+    },
+    "preprocessing": "aspect-preserving letterbox to 640x640, RGB, [0, 255] uint8 pixels"
+  },
+  "output_contracts": [
+    {
+      "name": "output_0",
+      "shape": [
+        1,
+        64,
+        8400
+      ],
+      "dtype": "QNN_DATATYPE_UFIXED_POINT_8 (uint8, 537600 bytes)",
+      "quantization": {
+        "scale": 0.1574602,
+        "offset": -191
+      },
+      "semantics": "16-bin DFL bounding box distribution across 8400 anchor grid locations"
+    },
+    {
+      "name": "output_1",
+      "shape": [
+        1,
+        3,
+        8400
+      ],
+      "dtype": "QNN_DATATYPE_UFIXED_POINT_8 (uint8, 25200 bytes)",
+      "quantization": {
+        "scale": 0.00390625,
+        "offset": 0
+      },
+      "semantics": "Sigmoid class probabilities for fire (0), smoke (1), person (2)"
+    }
+  ],
+  "post_processing": {
+    "type": "CPU vectorized DFL decode + anchor projection + NMS",
+    "latency_budget_ms": "< 1.0 ms",
+    "output_tensor": "[1, 7, 8400] float32 (cx, cy, w, h, cls0, cls1, cls2)"
+  }
+}

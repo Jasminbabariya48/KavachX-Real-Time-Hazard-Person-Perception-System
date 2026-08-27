@@ -1,0 +1,50 @@
+{
+  "step": "Step 4 \u2014 QNN INT8 Conversion",
+  "qairt_sdk_version": "2.47.0.260601",
+  "source_model": "kawachx_task/models/new_3class_best_FP32.onnx",
+  "converter_executable": "/home/devuser/qairt/2.47.0.260601/bin/x86_64-linux-clang/qnn-onnx-converter",
+  "calibration_samples_used": 3,
+  "input_tensor": {
+    "name": "images",
+    "shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "dtype": "QNN_DATATYPE_UFIXED_POINT_8",
+    "quant_encoding": "SCALE_OFFSET",
+    "scale": 0.00392156862745098,
+    "offset": 0
+  },
+  "output_tensor": {
+    "name": "output0",
+    "shape": [
+      1,
+      7,
+      8400
+    ],
+    "dtype": "QNN_DATATYPE_UFIXED_POINT_8",
+    "quant_encoding": "SCALE_OFFSET",
+    "scale": 2.5100512504577637,
+    "offset": 0
+  },
+  "quantization_scheme": {
+    "activations": "8-bit Unsigned Fixed Point Asymmetric (min-max)",
+    "weights": "8-bit Signed Fixed Point Per-Channel Symmetric",
+    "bias": "32-bit Signed Fixed Point Symmetric"
+  },
+  "conversion_status": "PASS",
+  "generated_artifacts": {
+    "cpp_model": "results/qnn_int8_conversion/generated/model_qnn_int8.cpp (3.72 MB)",
+    "bin_model": "results/qnn_int8_conversion/generated/model_qnn_int8.bin (26.03 MB)",
+    "net_json": "results/qnn_int8_conversion/generated/model_qnn_int8_net.json (8.72 MB)"
+  },
+  "verification_checks": {
+    "source_model_valid": true,
+    "input_contract_preserved": true,
+    "single_output_preserved": true,
+    "no_nan_or_inf_encodings": true,
+    "conversion_exit_code_zero": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "total_images_evaluated": 3,
+  "valid_images": 3,
+  "rejected_images": 0,
+  "total_nan_count": 0,
+  "total_inf_count": 0,
+  "dataset_statistics": {
+    "min_observed": 0.0,
+    "max_observed": 1.0,
+    "mean_observed": 0.4433551828066508,
+    "std_observed": 0.1915757954120636
+  },
+  "per_image_validation": [
+    {
+      "filename": "fire.jpg",
+      "source_path": "C:\\Users\\Jasmin Babariya\\Downloads\\KavachX\\data\\test_images\\fire.jpg",
+      "readable": true,
+      "valid_dimensions": true,
+      "channels_valid": true,
+      "not_corrupted": true,
+      "status": "PASSED",
+      "orig_dimensions": [
+        678,
+        452,
+        3
+      ]
+    },
+    {
+      "filename": "fire_2.jpg",
+      "source_path": "C:\\Users\\Jasmin Babariya\\Downloads\\KavachX\\data\\test_images\\fire_2.jpg",
+      "readable": true,
+      "valid_dimensions": true,
+      "channels_valid": true,
+      "not_corrupted": true,
+      "status": "PASSED",
+      "orig_dimensions": [
+        679,
+        452,
+        3
+      ]
+    },
+    {
+      "filename": "person.jpg",
+      "source_path": "C:\\Users\\Jasmin Babariya\\Downloads\\KavachX\\data\\test_images\\person.jpg",
+      "readable": true,
+      "valid_dimensions": true,
+      "channels_valid": true,
+      "not_corrupted": true,
+      "status": "PASSED",
+      "orig_dimensions": [
+        678,
+        452,
+        3
+      ]
+    }
+  ]
+}

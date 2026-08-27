@@ -1,0 +1,35 @@
+{
+  "model_name": "new_3class_best_FP32.onnx",
+  "framework": "Ultralytics YOLOv8 (8.4.113)",
+  "task": "detect",
+  "size_bytes": 103562434,
+  "input": {
+    "name": "images",
+    "shape": [1, 3, 640, 640],
+    "dtype": "float32",
+    "color_format": "RGB",
+    "normalization": "[0.0, 1.0]"
+  },
+  "output": {
+    "name": "output0",
+    "shape": [1, 7, 8400],
+    "dtype": "float32",
+    "channel_layout": "4 bbox (cx, cy, w, h) + 3 class scores"
+  },
+  "classes": {
+    "0": "person",
+    "1": "fire",
+    "2": "smoke"
+  },
+  "ground_truth_baseline": {
+    "hardware": "Qualcomm QCS6490 CPU (8-core)",
+    "runtime": "ONNX Runtime CPUExecutionProvider",
+    "mean_latency_ms": 2185.58,
+    "throughput_fps": 0.46,
+    "sample_detections": {
+      "fire.jpg": [{"class": "smoke", "confidence": 0.694}],
+      "fire_2.jpg": [{"class": "fire", "confidence": 0.325}],
+      "person.jpg": [{"class": "person", "confidence": 0.834}]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "2_clients": {
+    "num_clients": 2,
+    "processed_frames": 14,
+    "aggregate_fps": 9.5,
+    "errors": 0
+  },
+  "4_clients": {
+    "num_clients": 4,
+    "processed_frames": 21,
+    "aggregate_fps": 9.3,
+    "errors": 0
+  },
+  "8_clients": {
+    "num_clients": 8,
+    "processed_frames": 31,
+    "aggregate_fps": 8.9,
+    "errors": 0
+  }
+}

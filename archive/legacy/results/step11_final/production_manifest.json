@@ -1,0 +1,90 @@
+[
+  {
+    "artifact": "production_model_context_binary",
+    "path": "models/3class_calibrated_final.bin",
+    "size_bytes": 0,
+    "sha256": null,
+    "purpose": "Quantized INT8 HTP v68 Execution Graph (Hexagon DSP)",
+    "required_for_production": true
+  },
+  {
+    "artifact": "split_fp32_onnx_source",
+    "path": "models/new_3class_best_FP32_htp_split.onnx",
+    "size_bytes": 103421300,
+    "sha256": "62e7b54658ce06fbd7a23e6f033ef90865ad49e88222116aba0e04e32c4990c8",
+    "purpose": "Golden Split FP32 Reference Graph",
+    "required_for_production": false
+  },
+  {
+    "artifact": "production_worker_cpp_main",
+    "path": "src/npu_worker/main.cpp",
+    "size_bytes": 9909,
+    "sha256": "ee8a0d42f61a875f3c3af471469f22b3641b25f4dd17e9b353765847c841f7b1",
+    "purpose": "C++ High-Performance NPU Worker Entrypoint",
+    "required_for_production": true
+  },
+  {
+    "artifact": "production_worker_cpp_header",
+    "path": "src/npu_worker/qnn_inference.hpp",
+    "size_bytes": 2991,
+    "sha256": "78c1fa60a99b67b9f73c22b4fb81831758d334c1264fdcba63c58da83f745575",
+    "purpose": "Qualcomm Hexagon HTP Zero-Copy FastRPC Inference Engine",
+    "required_for_production": true
+  },
+  {
+    "artifact": "production_worker_cmake",
+    "path": "src/npu_worker/CMakeLists.txt",
+    "size_bytes": 0,
+    "sha256": null,
+    "purpose": "Build configuration for kawach_worker binary",
+    "required_for_production": true
+  },
+  {
+    "artifact": "production_config",
+    "path": "config/production_config.json",
+    "size_bytes": 2878,
+    "sha256": "fd7a4096a8a3cb14bd216377728a9a977a4312da24ad8addda2b8c18df47bde0",
+    "purpose": "Production threshold, IPC, stream, and monitoring configuration",
+    "required_for_production": true
+  },
+  {
+    "artifact": "systemd_service_unit",
+    "path": "config/kawach_worker.service",
+    "size_bytes": 905,
+    "sha256": "adadac51ab7364ad64f2ad8b1a30579f0ed360eb8643fd250dc0263a48c64f57",
+    "purpose": "Systemd daemon service descriptor",
+    "required_for_production": true
+  },
+  {
+    "artifact": "service_supervisor",
+    "path": "scripts/service/kawach_service.py",
+    "size_bytes": 11558,
+    "sha256": "78785b832270fa032da9d422be39050533d04ac47d77d666df0fc6acccf96635",
+    "purpose": "Deterministic pre-flight, lifecycle management & health supervisor",
+    "required_for_production": true
+  },
+  {
+    "artifact": "stream_pipeline",
+    "path": "src/stream/stream_pipeline.py",
+    "size_bytes": 13987,
+    "sha256": "6e5f936bd1b5f25936aa41285f413b1f9312c7cb6ec083319695dc0a910e435a",
+    "purpose": "Live stream queueing, IPC client, DFL decoding & alert debouncer",
+    "required_for_production": true
+  },
+  {
+    "artifact": "frame_source_abstractions",
+    "path": "src/stream/frame_source.py",
+    "size_bytes": 5917,
+    "sha256": "bf1a1c717d7b1e55e7e92b2d370313081e064676f00727b2b6a958c5c826b095",
+    "purpose": "Generic Camera, Video File, and RTSP stream sources with reconnect",
+    "required_for_production": true
+  },
+  {
+    "artifact": "live_monitoring_server",
+    "path": "src/stream/live_monitoring_server.py",
+    "size_bytes": 8312,
+    "sha256": "6eb6d7dbfed849c77c62b0354d3b858881700deff6f064c93f74416d52fd420a",
+    "purpose": "HTTP & MJPEG web dashboard for live monitoring",
+    "required_for_production": true
+  }
+]

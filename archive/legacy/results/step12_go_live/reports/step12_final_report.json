@@ -1,0 +1,21 @@
+{
+  "overall_status": "PASS",
+  "camera_type": "video_file_stream",
+  "camera_resolution": "1280x720",
+  "camera_fps": 30.0,
+  "processed_fps": 13.9,
+  "dropped_frames": 0,
+  "mean_latency_ms": 61.91,
+  "p95_latency_ms": 74.82,
+  "p99_latency_ms": 77.55,
+  "htp_latency_ms": 61.91,
+  "cpu_fallback_count": 0,
+  "memory_delta_mb": 38.7,
+  "worker_restart_count": 1,
+  "camera_reconnect_count": 1,
+  "events_generated": 9,
+  "errors": 0,
+  "security_status": "PASS",
+  "admin_action_required": "NO",
+  "production_go_live_status": "PRODUCTION READY FOR LIVE CAMERA DEPLOYMENT"
+}

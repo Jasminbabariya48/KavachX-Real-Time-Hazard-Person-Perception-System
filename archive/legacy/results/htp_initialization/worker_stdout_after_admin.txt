@@ -1,0 +1,19 @@
+======================================
+  Kawach NPU Worker v1.0
+======================================
+Backend: /home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnHtp.so
+System:  /home/devuser/qairt/2.47.0.260601/lib/aarch64-ubuntu-gcc9.4/libQnnSystem.so
+Model:   /home/work_user2/kawachx_task/models/3class_calibrated_final.bin
+Socket:  /tmp/test_init_step2.sock
+======================================
+
+ <E> DspTransport.openSession qnn_open failed, 0x00000072, prio 100
+ <E> DspTransport.getHandle failed, error 0x00000007
+ <E> createDspTransportInstance failed to config transport object
+ <E> error in creation of transport instance
+ <E> Failed to create transport for device, error: 1002
+ <E> Failed to load skel, error: 1002
+ <E> Transport layer setup failed: 14001
+ <E> Failed to parse default platform info: 14001
+ <E> Failed to load default platform info: 14001
+ <E> Failed to parse platform config: 14001

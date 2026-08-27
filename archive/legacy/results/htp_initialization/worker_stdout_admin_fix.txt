@@ -1,0 +1,1 @@
+srwxrwxr-x 1 work_user2 work_user2 0 Aug 26 17:32 /tmp/test_success.sock

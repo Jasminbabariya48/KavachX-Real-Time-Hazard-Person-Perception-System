@@ -1,0 +1,8 @@
+/home/work_user2/kawachx_task/npu_worker/kawach_worker
+/home/work_user2/kawachx_task/npu_worker/kawach_worker: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=fa582001e06c7fba9d705a21c66a8543759632fa, for GNU/Linux 3.7.0, not stripped
+	linux-vdso.so.1 (0x0000ffffa206c000)
+	libstdc++.so.6 => /lib/aarch64-linux-gnu/libstdc++.so.6 (0x0000ffffa1d60000)
+	libgcc_s.so.1 => /lib/aarch64-linux-gnu/libgcc_s.so.1 (0x0000ffffa1d20000)
+	libc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000ffffa1b60000)
+	/lib/ld-linux-aarch64.so.1 (0x0000ffffa2030000)
+	libm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000ffffa1ab0000)

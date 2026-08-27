@@ -1,0 +1,277 @@
+{
+  "step": "Step 8 \u2014 Production System Integration & End-to-End Validation",
+  "target_hardware": "Qualcomm Hexagon v68 HTP (QCS6490)",
+  "qairt_version": "2.47.0.260601",
+  "fastrpc_transport": "ACTIVE (/dev/fastrpc-cdsp)",
+  "model": "models/3class_calibrated_final.bin",
+  "fp32_baseline_parity": {
+    "fire": {
+      "status": "PASS",
+      "htp_infer_ms": 74.08,
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.85546875,
+          "bbox": [
+            327.03497314453125,
+            120.25808715820312,
+            495.22698974609375,
+            289.49237060546875
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "score": 0.5,
+          "bbox": [
+            269.04656982421875,
+            350.85052490234375,
+            308.31683349609375,
+            378.91729736328125
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.5,
+          "bbox": [
+            201.68206787109375,
+            172.7961883544922,
+            337.3773193359375,
+            344.65667724609375
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "smoke",
+          "score": 0.5,
+          "bbox": [
+            200.74415588378906,
+            175.27398681640625,
+            338.0853271484375,
+            344.2255859375
+          ]
+        }
+      ]
+    },
+    "fire_2": {
+      "status": "PASS",
+      "htp_infer_ms": 65.454,
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "person",
+          "score": 0.5,
+          "bbox": [
+            196.06869506835938,
+            195.53945922851562,
+            353.2551574707031,
+            391.0842590332031
+          ]
+        }
+      ]
+    },
+    "person": {
+      "status": "PASS",
+      "htp_infer_ms": 68.008,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.85546875,
+          "bbox": [
+            200.30523681640625,
+            234.2340850830078,
+            277.696533203125,
+            468.45440673828125
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.79296875,
+          "bbox": [
+            296.233642578125,
+            212.9763641357422,
+            359.58740234375,
+            493.08453369140625
+          ]
+        }
+      ]
+    }
+  },
+  "performance_100_runs": {
+    "mean_ms": 42.35286,
+    "median_ms": 30.22,
+    "min_ms": 29.917,
+    "max_ms": 70.174,
+    "p95_ms": 66.35419999999999,
+    "p99_ms": 67.27231,
+    "throughput_fps": 23.61115636582748
+  },
+  "sequential_batches": {
+    "batch_1": {
+      "duration_ms": 40.56811332702637,
+      "fps": 24.64990156034204
+    },
+    "batch_2": {
+      "duration_ms": 86.35950088500977,
+      "fps": 23.159003693908087
+    },
+    "batch_10": {
+      "duration_ms": 481.0667037963867,
+      "fps": 20.787138085184413
+    },
+    "batch_50": {
+      "duration_ms": 3216.810464859009,
+      "fps": 15.543346599437115
+    },
+    "batch_100": {
+      "duration_ms": 6915.982723236084,
+      "fps": 14.459261106020898
+    }
+  },
+  "concurrency_stress_test": {
+    "2_clients": {
+      "total_requests": 20,
+      "errors": 0,
+      "aggregate_fps": 3.0736147358079218,
+      "mean_roundtrip_ms": 612.0245387499835
+    },
+    "4_clients": {
+      "total_requests": 40,
+      "errors": 0,
+      "aggregate_fps": 28.015204193426488,
+      "mean_roundtrip_ms": 89.07257537498481
+    },
+    "8_clients": {
+      "total_requests": 80,
+      "errors": 0,
+      "aggregate_fps": 28.58344992363988,
+      "mean_roundtrip_ms": 155.2372244749904
+    }
+  },
+  "fault_tolerance_recovery": {
+    "truncated_request_recovery": "PASS",
+    "oversized_request_recovery": "PASS"
+  },
+  "alert_events_dispatched": [
+    {
+      "event_id": "EVT_FIRE_1787769184076",
+      "timestamp": "2026-08-26T18:33:04Z",
+      "image_source": "fire",
+      "event_type": "PERSON_DETECTED",
+      "severity": "WARNING",
+      "class_name": "person",
+      "confidence": 0.85546875,
+      "bounding_box": [
+        327.03,
+        120.26,
+        495.23,
+        289.49
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_1787769184076",
+      "timestamp": "2026-08-26T18:33:04Z",
+      "image_source": "fire",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "WARNING",
+      "class_name": "smoke",
+      "confidence": 0.5,
+      "bounding_box": [
+        269.05,
+        350.85,
+        308.32,
+        378.92
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_1787769184076",
+      "timestamp": "2026-08-26T18:33:04Z",
+      "image_source": "fire",
+      "event_type": "PERSON_DETECTED",
+      "severity": "WARNING",
+      "class_name": "person",
+      "confidence": 0.5,
+      "bounding_box": [
+        201.68,
+        172.8,
+        337.38,
+        344.66
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_1787769184076",
+      "timestamp": "2026-08-26T18:33:04Z",
+      "image_source": "fire",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "WARNING",
+      "class_name": "smoke",
+      "confidence": 0.5,
+      "bounding_box": [
+        200.74,
+        175.27,
+        338.09,
+        344.23
+      ]
+    },
+    {
+      "event_id": "EVT_FIRE_2_1787769184148",
+      "timestamp": "2026-08-26T18:33:04Z",
+      "image_source": "fire_2",
+      "event_type": "PERSON_DETECTED",
+      "severity": "WARNING",
+      "class_name": "person",
+      "confidence": 0.5,
+      "bounding_box": [
+        196.07,
+        195.54,
+        353.26,
+        391.08
+      ]
+    },
+    {
+      "event_id": "EVT_PERSON_1787769184213",
+      "timestamp": "2026-08-26T18:33:04Z",
+      "image_source": "person",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "CRITICAL",
+      "class_name": "fire",
+      "confidence": 0.85546875,
+      "bounding_box": [
+        200.31,
+        234.23,
+        277.7,
+        468.45
+      ]
+    },
+    {
+      "event_id": "EVT_PERSON_1787769184213",
+      "timestamp": "2026-08-26T18:33:04Z",
+      "image_source": "person",
+      "event_type": "HAZARD_DETECTED",
+      "severity": "CRITICAL",
+      "class_name": "fire",
+      "confidence": 0.79296875,
+      "bounding_box": [
+        296.23,
+        212.98,
+        359.59,
+        493.08
+      ]
+    }
+  ],
+  "stability_test": {
+    "frames_tested": 500,
+    "errors": 0,
+    "total_duration_sec": 20.62271237373352,
+    "effective_fps": 24.24511339433865,
+    "mean_latency_ms": 36.43239,
+    "p95_latency_ms": 65.23525,
+    "memory_leak_detected": false,
+    "status": "PASS"
+  },
+  "overall_status": "PASS"
+}

@@ -1,0 +1,2 @@
+[qnn] deviceCreate failed: 14001
+[kawach_worker] QNN init failed: ERROR_DEVICE_CREATE
